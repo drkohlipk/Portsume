@@ -1,6 +1,8 @@
-body { padding-top: 50px; }
+body { 
+  padding-top: 50px; 
+}
 
-.navbar-default {
+#topbar {
   background-color: #0e8466;
   border-bottom: 1px solid black;
 }
@@ -28,11 +30,19 @@ body { padding-top: 50px; }
 
 #left-topimg {
   /*border: 2px solid white;*/
-  height: 500px;
+  height: auto;
 }
 
 #dan-img {
-  margin-top: 10%;
+  /*margin-top: 10%;*/
   border: 5px solid white;
   border-radius: 100%;
+  margin-top: 7%
+}
+
+@media only screen and (max-width: 768px) {
+  #dan-img {
+    height: 100px;
+    width: 100px;
+  }
 }
