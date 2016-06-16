@@ -2,18 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>PJ's Portfolio Page!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <title>PJ's Portfolio Page!</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   </head>
   <body>
       <!--Need pic or something else to put in navbar, a little bland?-->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid" id="topbar">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -21,30 +22,34 @@
             </button>
             <a class="navbar-brand" href="#">Brand</a>
           </div>
-          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <div class="text-center" id="topname">Daniel Kohli</div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <!--Need to figure out how to link to parts of the page-->
-              <li class="nav-item">
-                <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+              <li>
+                <a href="#">About<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+              <li>
+                <a href="#">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="row">
-        <img src="images/HawaiinTreeBark.jpg" class="img-responsive" id="top-bgimg"/>
-          <div class="col-md-6 col-xs-12" id="left-topimg">
-            <img src="images/Profilepic.jpg" class="img-responsive center-block vertical-align" id="dan-img"/>
-          </div>
+    <div class="containter-fluid">
+      <div class="row" id="imgbgrow">
+        <img src="images/HawaiinTreeBark.jpg" class="img-responsive" id="top-bgimg">
+        <div class="col-md-6 col-xs-12" id="left-topimg">
+          <img src="images/Profilepic.jpg" class="center-block" id="dan-img"/>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center" id="topblurb">UX Design!  
+        </div>
+      </div>
     </div>
-    <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/resume.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

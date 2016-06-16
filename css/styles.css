@@ -2,9 +2,23 @@ body {
   padding-top: 50px; 
 }
 
+.navbar-default {
+  border-bottom: 1px solid black;
+}
+
 #topbar {
   background-color: #0e8466;
-  border-bottom: 1px solid black;
+}
+
+#topname {
+  font-family: 'Lobster', cursive;
+  font-size: 26px;
+  color: white;
+  position: absolute;
+  top: 6px;
+  left: 17%;
+  right: 20%;
+  flex-wrap: nowrap;
 }
 
 .navbar-default .navbar-brand{
@@ -24,25 +38,42 @@ body {
   padding-right: 20px;
 }
 
+#imgbgrow {
+  width: 100%;
+  margin-right: 0;
+}
+
 #top-bgimg {
+  /*background: url("../images/HawaiinTreeBark.jpg");*/
   position: absolute;
+  margin: 0px;
+  min-width: 1200px;
+  min-height: 300px;
 }
 
 #left-topimg {
-  /*border: 2px solid white;*/
-  height: auto;
+  margin: 45px 0px 50px 0px;
 }
 
 #dan-img {
-  /*margin-top: 10%;*/
   border: 5px solid white;
   border-radius: 100%;
-  margin-top: 7%
+}
+
+#topblurb {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  margin-top: 170px;
 }
 
 @media only screen and (max-width: 768px) {
   #dan-img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+  }
+  #topblurb {
+    color: black;
+    background-image: none;
   }
 }
