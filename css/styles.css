@@ -1,3 +1,8 @@
+a:focus, a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
 body { 
   padding-top: 50px; 
 }
@@ -67,12 +72,114 @@ body {
   margin-top: 170px;
 }
 
-.footer {
+#portfolio {
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+#workhistory {
+  color: white;
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: gray;
+}
+
+#education {
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+#awards {
+  color: white;
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: gray;
+}
+
+.buttons {
+   display: inline-block;
+   margin: 0;
+}
+
+#e-mail {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #BF2E25;
+}
+
+#e-mail:hover {
+  background-color: #df4f47;
+}
+
+#facebook {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #3b5998;
+}
+
+#facebook:hover {
+  background-color: #5d7bba;
+}
+
+#linkedin {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #0077b5;
+}
+
+#linkedin:hover {
+  background-color: #2299d7;
+}
+
+#github {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #800080;
+}
+
+#github:hover {
+  background-color: #a222a2;
+}
+
+.button {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+#footer {
   height: 100px;
-  width: 100%;
-  margin: 0;
-  color: #0e8466;
-  bottom: auto;
+  margin: 0px -15px 0px -15px;
+  background-color: #0e8466;
+  border-top: 1px solid black;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
