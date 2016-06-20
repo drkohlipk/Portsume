@@ -1,0 +1,218 @@
+a:focus, a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+body { 
+  padding-top: 50px; 
+}
+
+.navbar-default {
+  border-bottom: 1px solid black;
+}
+
+#topbar {
+  background-color: #0e8466;
+}
+
+#topname {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 6px;
+  left: 17%;
+  right: 20%;
+  flex-wrap: nowrap;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #0e8466;
+  background-color: white;
+}
+
+.navbar-default .navbar-right {
+  padding-right: 20px;
+}
+
+#imgbgrow {
+  width: 100%;
+  margin-right: 0;
+}
+
+#top-bgimg {
+  /*background: url("../images/HawaiinTreeBark.jpg");*/
+  position: absolute;
+  margin: 0px;
+  min-width: 1200px;
+  min-height: 300px;
+}
+
+#left-topimg {
+  margin: 45px 0px 50px 0px;
+}
+
+#dan-img {
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+#topblurb {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 170px;
+}
+
+#portfolio {
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#workhistory {
+  color: white;
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#education {
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#awards {
+  color: white;
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+.buttons {
+   display: inline-block;
+   margin: 0;
+}
+
+#e-mail {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #BF2E25;
+}
+
+#e-mail:hover {
+  background-color: #df4f47;
+}
+
+#facebook {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #3b5998;
+}
+
+#facebook:hover {
+  background-color: #5d7bba;
+}
+
+#linkedin {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #0077b5;
+}
+
+#linkedin:hover {
+  background-color: #2299d7;
+}
+
+#github {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #800080;
+}
+
+#github:hover {
+  background-color: #a222a2;
+}
+
+.button {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#footer {
+  height: auto;
+  margin: 0px -15px 0px -15px;
+  background-color: #0e8466;
+  border-top: 1px solid black;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#contact {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  #dan-img {
+    height: 150px;
+    width: 150px;
+  }
+  #topblurb {
+    color: black;
+    background-image: none;
+    font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  }
+}
