@@ -189,12 +189,21 @@ body {
 }
 
 .button {
-  margin: 10px;
+  margin-left: 4px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0px;
   text-decoration: none;
   color: white;
-  text-align: center;
+  /*text-align: center;*/
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+  position: relative;
+  margin-bottom: 8px
+    -webkit-font-smoothing: antialiased;
+  speak: none;
+  line-height: 1;
+  text-transform: none;
 }
 
 #footer {
