@@ -11,46 +11,50 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
-      <!--Need pic or something else to put in navbar, a little bland?-->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid" id="topbar">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#"><img src="images/PJLogo.jpg" id="logo" alt="PJ Logo"></a>
+      <header>
+        <nav class="navbar navbar-default navbar-fixed-top" id="topbar">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+                <div id="logo"></div>
+              </a>
+              <div class="navbar-brand"><h1 class="text-center ">Daniel Kohli</h1>
+              </div>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <!--Need to figure out how to link to parts of the page-->
+                <li>
+                  <a href="#top">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#footer">Contact</a>
+                </li>
+              </ul>
             </div>
-          <div class="text-center" id="topname">Daniel Kohli</div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <!--Need to figure out how to link to parts of the page-->
-              <li>
-                <a href="#">About<span class="sr-only">(current)</span></a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
-    <div class="containter-fluid">
-    <img src="images/HawaiinTreeBark.jpg" class="img-responsive" id="top-bgimg">
+        </nav>
+      </header>
+    <div class="containter-fluid" id="top">
+    <img src="images/HawaiinTreeBark.jpg" class="img-responsive" id="top-bgimg" alt="Hawaiian Tree Bark Background">
       <div class="row" id="imgbgrow">
         <div class="col-md-6 col-xs-12" id="left-topimg">
-          <img src="images/Profilepic.jpg" class="center-block" id="dan-img" alt="Profile pic"/>
+          <img src="images/Profilepic.jpg" class="center-block img-responsive" id="dan-img" alt="Profile pic"/>
         </div>
-        <div class="col-md-6 col-xs-12 text-center" id="topblurb">UX Design!  
+        <div class="col-md-6 col-xs-12 text-center" id="topblurb"><h2>UX Design!</h2>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center text-uppercase" id="portfolio">PORTFOLIO
         </div>
@@ -64,36 +68,41 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 text-center text-uppercase" id="awards">AWARDS &amp RECOGNITION
+        <div class="col-xs-12 text-center text-uppercase" id="awards">AWARDS &amp; RECOGNITION
         </div>
       </div>
-      <div class="row" id="footer">
-      	<div class="col-md-6 col-xs-12">
-      		<div class="buttons">
-      		<a href="mailto: ?drkohlipk@gmail.com" target="_blank" alt="E-mail"><button class="button" id="e-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></button></a></div>
-      		<div class="buttons">
-      		<a href="https://www.facebook.com/usmcltdan" target="_blank" alt="Facebook"><button class="button" id="facebook"><i class="fa fa-facebook-f fa-3x" aria-hidden="true"></i></button></a></div>
-      		<div class="buttons">
-      		<a href="https://www.linkedin.com/in/daniel-kohli-299155118" target="_blank" alt="LinkedIn"><button class="button" id="linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></button></a></div>
-      		<div class="buttons">
-      		<a href="https://github.com/drkohlipk" target="_blank" alt="Github"><button class="button" id="github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></button></a></div>
-      	</div>
-      	<div class="col-md-6 col-xs-12" id="contact">
-      	Feel free to contact me at any point in time regarding whatever you feel like talking about!
-      	<ul>Topics include but are not limited to the following:
-      		<li>Potential job opportunities</li>
-      		<li>Friendly conversation about what it's like to fly a fighter jet</li>
-      		<li>The cosmos and the meaning of life</li>
-      		<li>Conservation and fly fishing</li>
-      		<li>How cool dogs are</li>
-      	</ul>
-      	</div>
-      	<div class="col-xs-12 text-center" id="copyright">
-      		&copy 2016 Daniel Kohli
-      	</div>
-      </div>
     </div>
+    <nav class="navbar navbar-default navbar-bottom" id="footer">
+    	<div class="container">
+        <div class="row">
+        	<div id="contact-buttons">
+        		<div class="buttons">
+        		<!--<a href="mailto: ?drkohlipk@gmail.com" target="_blank" title="E-mail">--><button formaction="http://www.stackoverflow.com" class="button" id="e-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></button></div>
+        		<div class="buttons">
+        		<a href="https://www.facebook.com/usmcltdan" rel="nofollow" title="Follow Me On Facebook!" target="_blank"><button class="button" id="facebook"><i class="fa fa-facebook-f fa-3x" aria-hidden="true"></i></button></a></div>
+        		<div class="buttons">
+        		<a href="https://www.linkedin.com/in/daniel-kohli-299155118" target="_blank" title="Let's Connect On LinkedIn!"><button class="button" id="linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></button></a></div>
+        		<div class="buttons">
+        		<a href="https://github.com/drkohlipk" target="_blank" title="Check Out My Github!"><button class="button" id="github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></button></a></div>
+        	</div>
+        	<div class="col-md-6 col-xs-12" id="contact">
+        	Feel free to contact me at any point in time regarding whatever you feel like talking about!
+        	<ul>Topics include but are not limited to the following:
+        		<li>Potential job opportunities</li>
+        		<li>Friendly conversation about what it's like to fly a fighter jet</li>
+        		<li>The cosmos and the meaning of life</li>
+        		<li>Conservation and fly fishing</li>
+        		<li>How cool dogs are</li>
+        	</ul>
+        	</div>
+        	<div class="col-xs-12 text-center" id="copyright">
+        		&copy; 2016 Daniel Kohli
+        	</div>
+        </div>
+      </div>
+    </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/resume.js"></script>
   </body>
 </html>
