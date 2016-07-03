@@ -1,3 +1,10 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 a:focus, a:visited {
   outline: none;
   text-decoration: none;
@@ -7,24 +14,32 @@ body {
   padding-top: 50px; 
 }
 
-.navbar-default {
+#topbar {
+  background-color: #0e8466;
   border-bottom: 1px solid black;
 }
 
-#topbar {
-  background-color: #0e8466;
+#logo {
+  background: url('../images/PJLogo.jpg') no-repeat;
+  width: 150px;
+  height: 50px;
 }
 
-#topname {
+.navbar-brand > h1 {
   font-family: 'Poiret One', cursive;
+  font-style: cursive;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2.0em;
+  /*text-transform: uppercase;*/
   color: white;
-  position: absolute;
-  top: 6px;
-  left: 17%;
-  right: 20%;
-  flex-wrap: nowrap;
+  text-shadow: 1px 1px 1px #222;
+  line-height: .50;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-left: 20%;
+  margin-right: 20%;*/
 }
 
 .navbar-default .navbar-brand{
@@ -37,6 +52,7 @@ body {
   color: white;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+  font-size: 1.25em;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -57,8 +73,8 @@ body {
   /*background: url("../images/HawaiinTreeBark.jpg");*/
   position: absolute;
   margin: 0px;
-  min-width: 1200px;
-  min-height: 300px;
+  /*min-width: 1200px;*/
+  height: 400px;
 }
 
 #left-topimg {
@@ -70,11 +86,11 @@ body {
   border-radius: 100%;
 }
 
-#topblurb {
+#topblurb > h2 {
   color: white;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3em;
   margin-top: 170px;
 }
 
@@ -128,9 +144,9 @@ body {
   font-weight: bold;
 }
 
-.buttons {
-   display: inline-block;
-   margin: 0;
+#contact-buttons {
+  float: left;
+  margin-top: 20px;
 }
 
 #e-mail {
@@ -143,6 +159,10 @@ body {
 
 #e-mail:hover {
   background-color: #df4f47;
+}
+
+#e-mail:visited {
+  text-decoration: none;
 }
 
 #facebook {
@@ -181,13 +201,22 @@ body {
   background-color: #a222a2;
 }
 
-.button {
-  margin: 10px;
+.buttons {
+  margin-left: 4px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0px;
   text-decoration: none;
   color: white;
-  text-align: center;
+  /*text-align: center;*/
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+  position: relative;
+  margin-bottom: 8px
+    -webkit-font-smoothing: antialiased;
+  speak: none;
+  line-height: 1;
+  text-transform: none;
 }
 
 #footer {
@@ -202,6 +231,25 @@ body {
 
 #contact {
   padding: 15px;
+  float: right;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  #topblurb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #topblurb h2 {
+    color: black;
+    background-image: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -209,10 +257,14 @@ body {
     height: 150px;
     width: 150px;
   }
-  #topblurb {
+  #topblurb h2 {
     color: black;
     background-image: none;
     font-family: 'Poiret One', cursive;
-  font-weight: bold;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
