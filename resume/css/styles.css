@@ -14,23 +14,28 @@ body {
   padding-top: 50px; 
 }
 
-#topbar {
+.container {
+  padding: 0;
+}
+
+/*Start Header*/
+#topbar { /*Top Navbar*/
   background-color: #0e8466;
   border-bottom: 1px solid black;
 }
 
-#logo {
+#logo { /*Logo Image*/
   background: url('../images/PJLogo.jpg') no-repeat;
   width: 150px;
   height: 50px;
+  margin-left: -35px;
 }
 
-.navbar-brand > h1 {
+.navbar-brand > h1 { /*Navbar Name*/
   font-family: 'Poiret One', cursive;
   font-style: cursive;
   font-weight: bold;
   font-size: 2.0em;
-  /*text-transform: uppercase;*/
   color: white;
   text-shadow: 1px 1px 1px #222;
   line-height: .50;
@@ -38,42 +43,34 @@ body {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  /*margin-left: 20%;
-  margin-right: 20%;*/
 }
 
-.navbar-default .navbar-brand{
+.navbar-default .navbar-nav > li > a { /*Navbar Links*/
   color: white;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+  font-size: 1.4em;
+  text-shadow: 1px 1px 1px #222;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  font-size: 1.25em;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover { /*Link Hover*/
   color: #0e8466;
   background-color: white;
+  text-shadow: none;
 }
 
-.navbar-default .navbar-right {
-  padding-right: 20px;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /*Link Dropdown*/
+  border: 1px solid white;
 }
+/*End Header*/
 
+/*Start Pic and Blurb*/
 #imgbgrow {
-  width: 100%;
-  margin-right: 0;
+  margin: 0;
 }
 
-#top-bgimg {
-  /*background: url("../images/HawaiinTreeBark.jpg");*/
-  position: absolute;
-  margin: 0px;
-  /*min-width: 1200px;*/
+#top-content {
+  background: url("../images/HawaiinTreeBark.jpg") no-repeat;
   height: 400px;
 }
 
@@ -87,19 +84,30 @@ body {
 }
 
 #topblurb > h2 {
-  color: white;
+  color: black;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
-  font-size: 3em;
-  margin-top: 170px;
+  font-size: 5em;
+  margin-top: 140px;
+  text-shadow: 2px 2px 2px white;
 }
 
+#topblurb > p {
+  color: white;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 3.7em;
+  margin-top: -30px;
+  text-shadow: 1px 1px 1px #222;
+}
+/*End Profile Pic and Blurb*/
+
+/*Start About Section*/
 #portfolio {
   margin-top: -6px;
   font-size: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   color: gray;
   font-family: 'Poiret One', cursive;
@@ -143,75 +151,27 @@ body {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
+/*End About Section*/
+
+/*Start Footer*/
+#footer {
+  height: auto;
+  margin: 0;
+  background-color: #0e8466;
+  border-top: 1px solid black;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
 
 #contact-buttons {
-  float: left;
   margin-top: 20px;
 }
 
-#e-mail {
-  height: 50px;
-  width: 50px;
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: #BF2E25;
-}
-
-#e-mail:hover {
-  background-color: #df4f47;
-}
-
-#e-mail:visited {
-  text-decoration: none;
-}
-
-#facebook {
-  height: 50px;
-  width: 50px;
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: #3b5998;
-}
-
-#facebook:hover {
-  background-color: #5d7bba;
-}
-
-#linkedin {
-  height: 50px;
-  width: 50px;
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: #0077b5;
-}
-
-#linkedin:hover {
-  background-color: #2299d7;
-}
-
-#github {
-  height: 50px;
-  width: 50px;
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: #800080;
-}
-
-#github:hover {
-  background-color: #a222a2;
-}
-
 .buttons {
-  margin-left: 4px;
   overflow: hidden;
   display: inline-block;
   padding: 0px;
-  text-decoration: none;
-  color: white;
-  /*text-align: center;*/
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  position: relative;
   margin-bottom: 8px
     -webkit-font-smoothing: antialiased;
   speak: none;
@@ -219,14 +179,75 @@ body {
   text-transform: none;
 }
 
-#footer {
-  height: auto;
-  margin: 0px -15px 0px -15px;
-  background-color: #0e8466;
-  border-top: 1px solid black;
+.buttons #e-mail {
+  display: block;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding-top: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #BF2E25;
+  text-decoration: none;
   color: white;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+}
+
+#e-mail:hover {
+  background-color: #df4f47;
+}
+
+.buttons #facebook {
+  margin-left: 4px;
+  display: block;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding-top: 9px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #3b5998;
+  text-decoration: none;
+  color: white;
+}
+
+#facebook:hover {
+  background-color: #5d7bba;
+}
+
+.buttons #linkedin {
+  margin-left: 4px;
+  display: block;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding-top: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #0077b5;
+  text-decoration: none;
+  color: white;
+}
+
+#linkedin:hover {
+  background-color: #2299d7;
+}
+
+#github {
+  margin-left: 4px;
+  display: block;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding-top: 3px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #800080;
+  text-decoration: none;
+  color: white;
+}
+
+#github:hover {
+  background-color: #a222a2;
 }
 
 #contact {
@@ -235,12 +256,39 @@ body {
   font-size: 1.25em;
   font-weight: normal;
 }
+/*End Footer*/
 
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+/************************Large Devices************************/
+@media only screen and (min-width: 1200px) {
+
+}
+
+/************************Medium Devices***********************/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/************************Small Devices************************/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #left-topimg { /*Profile Pic Box*/
+    margin-top: 0px;
+    margin-bottom: 35px;
+  }
+  #left-topimg > #dan-img { /*Profile Pic*/
+    position: relative;
+    border-width: 3px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 20%);
+    -moz-transform: translate(-50%, 20%);
+    -ms-transform: translate(-50%, 20%);
+    -o-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+    height: 200px;
+    width: 200px;
+  }
   #topblurb {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    text-align: center;
   }
   #topblurb h2 {
     color: black;
@@ -249,13 +297,36 @@ body {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  #topblurb p {
+    margin-top: -20px;
+  }
+  #portfolio {
+    margin-top: 0;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #dan-img {
-    height: 150px;
-    width: 150px;
+/*********************Extra Small Devices*********************/
+@media only screen and (max-width: 767px) {
+  #left-topimg { /*Profile Pic Box*/
+    margin-top: 0px;
+    margin-bottom: 35px;
+  }
+  #left-topimg > #dan-img { /*Profile Pic*/
+    position: relative;
+    border-width: 3px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 20%);
+    -moz-transform: translate(-50%, 20%);
+    -ms-transform: translate(-50%, 20%);
+    -o-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+    height: 200px;
+    width: 200px;
+  }
+  #topblurb { /*Attributes Box*/
+    text-align: center;
   }
   #topblurb h2 {
     color: black;
@@ -264,7 +335,28 @@ body {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  #topblurb p {
+    margin-top: -20px;
+  }
+  #portfolio {
+    margin-top: 0;
+  }
+  #contact-buttons {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  #contact-buttons > .buttons {
+    position: relative;
+    top: 50%;
+    left: 28%;
+    -webkit-transform: translate(-50%, 20%);
+    -moz-transform: translate(-50%, 20%);
+    -ms-transform: translate(-50%, 20%);
+    -o-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+  }
+  #contact {
+    padding: 0px 15px 0px 25px;
   }
 }
