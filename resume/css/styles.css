@@ -304,6 +304,26 @@ body {
   #portfolio {
     margin-top: 0;
   }
+  #contact-buttons {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  #contact-buttons > .buttons {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-210%, 20%);
+    -moz-transform: translate(-210%, 20%);
+    -ms-transform: translate(-210%, 20%);
+    -o-transform: translate(-210%, 20%);
+    transform: translate(-210%, 20%);
+  }
+  .buttons #e-mail {
+    margin-right: 4px;
+  }
+  #contact {
+    padding: 0px 15px 0px 25px;
+  }
 }
 
 /*********************Extra Small Devices*********************/
@@ -349,12 +369,15 @@ body {
   #contact-buttons > .buttons {
     position: relative;
     top: 50%;
-    left: 28%;
-    -webkit-transform: translate(-50%, 20%);
-    -moz-transform: translate(-50%, 20%);
-    -ms-transform: translate(-50%, 20%);
-    -o-transform: translate(-50%, 20%);
-    transform: translate(-50%, 20%);
+    left: 50%;
+    -webkit-transform: translate(-220%, 20%);
+    -moz-transform: translate(-220%, 20%);
+    -ms-transform: translate(-220%, 20%);
+    -o-transform: translate(-220%, 20%);
+    transform: translate(-220%, 20%);
+  }
+  .buttons #e-mail {
+    margin-right: 4px;
   }
   #contact {
     padding: 0px 15px 0px 25px;
