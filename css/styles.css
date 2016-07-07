@@ -41,8 +41,6 @@ body {
   line-height: .50;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .navbar-default .navbar-nav > li > a { /*Navbar Links*/
@@ -309,6 +307,7 @@ body {
     margin-bottom: 15px;
   }
   #contact-buttons > .buttons {
+    overflow: hidden;
     position: relative;
     top: 50%;
     left: 50%;
@@ -328,6 +327,12 @@ body {
 
 /*********************Extra Small Devices*********************/
 @media only screen and (max-width: 767px) {
+  .container .navbar-header div > #name {
+    margin-left: 10px;
+  }
+  .container .navbar-header #menu-toggle {
+    margin-right: 27px;
+  }
   #left-topimg { /*Profile Pic Box*/
     margin-top: 0px;
     margin-bottom: 35px;
@@ -367,6 +372,7 @@ body {
     margin-bottom: 15px;
   }
   #contact-buttons > .buttons {
+    overflow: hidden;
     position: relative;
     top: 50%;
     left: 50%;
