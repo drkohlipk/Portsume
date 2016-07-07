@@ -41,6 +41,11 @@ body {
   line-height: .50;
   margin-top: 0;
   margin-bottom: 0;
+<<<<<<< HEAD
+=======
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> 7e7d1f5ede0436624e223d087d664ef68f34ae49
 }
 
 .navbar-default .navbar-nav > li > a { /*Navbar Links*/
@@ -88,8 +93,23 @@ body {
   font-size: 5em;
   margin-top: 140px;
   text-shadow: 2px 2px 2px white;
+<<<<<<< HEAD
 }
 
+#topblurb > p {
+  color: white;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 3.7em;
+  margin-top: -30px;
+  text-shadow: 1px 1px 1px #222;
+=======
+>>>>>>> 7e7d1f5ede0436624e223d087d664ef68f34ae49
+}
+/*End Profile Pic and Blurb*/
+
+<<<<<<< HEAD
+=======
 #topblurb > p {
   color: white;
   font-family: cursive;
@@ -100,6 +120,7 @@ body {
 }
 /*End Profile Pic and Blurb*/
 
+>>>>>>> 7e7d1f5ede0436624e223d087d664ef68f34ae49
 /*Start About Section*/
 #portfolio {
   margin-top: -6px;
@@ -258,6 +279,7 @@ body {
 
 /************************Large Devices************************/
 @media only screen and (min-width: 1200px) {
+<<<<<<< HEAD
 
 }
 
@@ -266,6 +288,16 @@ body {
 
 }
 
+=======
+
+}
+
+/************************Medium Devices***********************/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+>>>>>>> 7e7d1f5ede0436624e223d087d664ef68f34ae49
 /************************Small Devices************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #left-topimg { /*Profile Pic Box*/
@@ -307,7 +339,10 @@ body {
     margin-bottom: 15px;
   }
   #contact-buttons > .buttons {
+<<<<<<< HEAD
     overflow: hidden;
+=======
+>>>>>>> 7e7d1f5ede0436624e223d087d664ef68f34ae49
     position: relative;
     top: 50%;
     left: 50%;
@@ -327,12 +362,15 @@ body {
 
 /*********************Extra Small Devices*********************/
 @media only screen and (max-width: 767px) {
+<<<<<<< HEAD
   .container .navbar-header div > #name {
     margin-left: 10px;
   }
   .container .navbar-header #menu-toggle {
     margin-right: 27px;
   }
+=======
+>>>>>>> 7e7d1f5ede0436624e223d087d664ef68f34ae49
   #left-topimg { /*Profile Pic Box*/
     margin-top: 0px;
     margin-bottom: 35px;
@@ -372,7 +410,10 @@ body {
     margin-bottom: 15px;
   }
   #contact-buttons > .buttons {
+<<<<<<< HEAD
     overflow: hidden;
+=======
+>>>>>>> 7e7d1f5ede0436624e223d087d664ef68f34ae49
     position: relative;
     top: 50%;
     left: 50%;

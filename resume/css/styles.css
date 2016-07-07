@@ -1,0 +1,270 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:focus, a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+body { 
+  padding-top: 50px; 
+}
+
+#topbar {
+  background-color: #0e8466;
+  border-bottom: 1px solid black;
+}
+
+#logo {
+  background: url('../images/PJLogo.jpg') no-repeat;
+  width: 150px;
+  height: 50px;
+}
+
+.navbar-brand > h1 {
+  font-family: 'Poiret One', cursive;
+  font-style: cursive;
+  font-weight: bold;
+  font-size: 2.0em;
+  /*text-transform: uppercase;*/
+  color: white;
+  text-shadow: 1px 1px 1px #222;
+  line-height: .50;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-left: 20%;
+  margin-right: 20%;*/
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #0e8466;
+  background-color: white;
+}
+
+.navbar-default .navbar-right {
+  padding-right: 20px;
+}
+
+#imgbgrow {
+  width: 100%;
+  margin-right: 0;
+}
+
+#top-bgimg {
+  /*background: url("../images/HawaiinTreeBark.jpg");*/
+  position: absolute;
+  margin: 0px;
+  /*min-width: 1200px;*/
+  height: 400px;
+}
+
+#left-topimg {
+  margin: 45px 0px 50px 0px;
+}
+
+#dan-img {
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+#topblurb > h2 {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 3em;
+  margin-top: 170px;
+}
+
+#portfolio {
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#workhistory {
+  color: white;
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#education {
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#awards {
+  color: white;
+  margin-top: -6px;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: gray;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#contact-buttons {
+  float: left;
+  margin-top: 20px;
+}
+
+#e-mail {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #BF2E25;
+}
+
+#e-mail:hover {
+  background-color: #df4f47;
+}
+
+#e-mail:visited {
+  text-decoration: none;
+}
+
+#facebook {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #3b5998;
+}
+
+#facebook:hover {
+  background-color: #5d7bba;
+}
+
+#linkedin {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #0077b5;
+}
+
+#linkedin:hover {
+  background-color: #2299d7;
+}
+
+#github {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #800080;
+}
+
+#github:hover {
+  background-color: #a222a2;
+}
+
+.buttons {
+  margin-left: 4px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0px;
+  text-decoration: none;
+  color: white;
+  /*text-align: center;*/
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 8px
+    -webkit-font-smoothing: antialiased;
+  speak: none;
+  line-height: 1;
+  text-transform: none;
+}
+
+#footer {
+  height: auto;
+  margin: 0px -15px 0px -15px;
+  background-color: #0e8466;
+  border-top: 1px solid black;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+#contact {
+  padding: 15px;
+  float: right;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  #topblurb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #topblurb h2 {
+    color: black;
+    background-image: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #dan-img {
+    height: 150px;
+    width: 150px;
+  }
+  #topblurb h2 {
+    color: black;
+    background-image: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
