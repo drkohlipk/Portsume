@@ -67,8 +67,9 @@ body {
   margin: 0;
 }
 
-#top-content {
+#top-content { /*Need to come up with different sizes for media queries!*/
   background: url("../images/HawaiinTreeBark.jpg") no-repeat;
+  background-position: center;
   height: 400px;
 }
 
@@ -251,8 +252,19 @@ body {
 #contact {
   padding: 15px;
   float: right;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: normal;
+}
+
+#contact ul {
+  margin-top: 5px;
+}
+
+#contact li:nth-child(1) {
+  margin-top: 5px;
+}
+#contact li {
+  font-size: .7em;
 }
 /*End Footer*/
 
@@ -320,6 +332,11 @@ body {
   .buttons #e-mail {
     margin-right: 4px;
   }
+  #contact-row hr {
+    margin-top: 30px;
+    border: 1px solid white;
+    width: 50%;
+  }
   #contact {
     padding: 0px 15px 0px 25px;
   }
@@ -332,6 +349,13 @@ body {
   }
   .container .navbar-header #menu-toggle {
     margin-right: 27px;
+  }
+  div #navbar-collapse-1 {
+    width: 50%;
+    float: right;
+  }
+  .divider {
+    border-bottom: 1px solid white;
   }
   #left-topimg { /*Profile Pic Box*/
     margin-top: 0px;
@@ -385,7 +409,13 @@ body {
   .buttons #e-mail {
     margin-right: 4px;
   }
+  #contact-row hr {
+    margin-top: 30px;
+    border: 1px solid white;
+    width: 50%;
+  }
   #contact {
+    margin-top: -10px;
     padding: 0px 15px 0px 25px;
   }
 }
