@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -11,12 +12,12 @@ a:focus, a:visited {
 }
 
 body { 
-  padding-top: 50px; 
+  padding-top: 48px; 
 }
 
 .container-fluid {
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -30,36 +31,35 @@ body {
 }
 
 #logo { /*Logo Image*/
-  background: url('../images/PJLogo.jpg') no-repeat;
   width: 150px;
   height: 50px;
+  background: url('../images/PJLogo.jpg') no-repeat;
   margin-left: -35px;
 }
 
 .navbar-brand > h1 { /*Navbar Name*/
-  font-family: 'Poiret One', cursive;
-  font-style: cursive;
-  font-weight: bold;
-  font-size: 2.0em;
-  color: white;
-  text-shadow: 1px 1px 1px #222;
-  line-height: .50;
   margin-top: 0;
   margin-bottom: 0;
+  color: white;
+  font-size: 2.0em;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bold;
+  line-height: .50;
+  text-shadow: 1px 1px 1px #222;
 }
 
 .navbar-default .navbar-nav > li > a { /*Navbar Links*/
   color: white;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
   font-size: 1.4em;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   transition: all .5s;
 }
 
 .navbar-default .navbar-nav > li > a:hover { /*Link Hover*/
-  color: #0e8466;
   background-color: white;
+  color: #0e8466;
   text-shadow: none;
 }
 
@@ -74,11 +74,11 @@ body {
 }
 
 #top-content { /*Need to come up with different sizes for media queries!*/
+	background-size: 1920px 405px;
   background: url("../images/HawaiinTreeBark.jpg") no-repeat;
   background-position: center;
-  height: 400px;
 	margin: 0;
-	background-size: 400px 1920px;
+	padding: 0;
 }
 
 #left-topimg {
@@ -91,83 +91,75 @@ body {
 }
 
 #topblurb > h2 {
+  margin-top: 140px;
   color: black;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', sans-serif;
   font-weight: bold;
   font-size: 5em;
-  margin-top: 140px;
   text-shadow: 2px 2px 2px white;
 }
 
 #topblurb > p {
+  margin-top: -30px;
+  font-size: 3.7em;
   color: white;
   font-family: cursive;
   font-weight: bold;
-  font-size: 3.7em;
-  margin-top: -30px;
   text-shadow: 1px 1px 1px #222;
 }
 /*End Profile Pic and Blurb*/
 
 /*Start About Section*/
-#portfolio {
-  margin-top: -6px;
-  font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid gray;
+.sep {
+	width: 100%;
+	height: 12px;
+	margin: 0;
+	box-shadow: inset 0 12px 20px -15px darkgray;
+}
+
+.title {
+	font-size: 40px;
+	color: gray;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bold;
+	text-shadow: 1px 1px 3px gray;
+}
+
+.title-hr {
+	width: 500px;
+	height: 1px;
+	background: black;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(black), to(white), color-stop(25%, #656565));
+	margin-left: 15px;
+}
+
+.abtsxn {
+	height: 500px;
+  margin: 0;
+	padding: 0;
   color: gray;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', sans-serif;
   font-weight: bold;
 }
 
-#workhistory {
-  color: white;
-  margin-top: -6px;
-  font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  background-color: gray;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+.content {
+	display: block;
+	float: left;
+	margin-top: 0px;
+	padding-top: 0;
+	font-size: 1.2vw;
 }
 
-#education {
-  margin-top: -6px;
-  font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  color: gray;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-}
-
-#awards {
-  color: white;
-  margin-top: -6px;
-  font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  background-color: gray;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-}
 /*End About Section*/
 
 /*Start Footer*/
 #footer {
   height: auto;
-  margin: 0;
-  background-color: #0e8466;
   border-top: 1px solid black;
+  background-color: #0e8466;
+  margin: 0;
   color: white;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', sans-serif;
   font-weight: bold;
 }
 
@@ -176,28 +168,27 @@ body {
 }
 
 .buttons {
+	display: inline-block;
+	padding: 0px;
+	color: white;
+  text-transform: none;
 	vertical-align: top;
   overflow: hidden;
-  display: inline-block;
-  padding: 0px;
-  margin-bottom: 8px
-    -webkit-font-smoothing: antialiased;
-  speak: none;
-  line-height: 1;
-  text-transform: none;
+  /*-webkit-font-smoothing: antialiased;*/
+  /*speak: none;
+  line-height: 1;*/
 }
 
 .buttons #e-mail {
   display: block;
-  text-align: center;
-  height: 50px;
-  width: 50px;
-  padding-top: 8px;
+	width: 50px;
+	height: 50px;
   border: 1px solid white;
   border-radius: 50%;
   background-color: #BF2E25;
+  padding-top: 8px;
+  text-align: center;
   text-decoration: none;
-  color: white;
 	transition: all .5s;
 }
 
@@ -206,17 +197,16 @@ body {
 }
 
 .buttons #facebook {
-  margin-left: 4px;
   display: block;
-  text-align: center;
-  height: 50px;
   width: 50px;
-  padding-top: 9px;
+	height: 50px;
   border: 1px solid white;
   border-radius: 50%;
   background-color: #3b5998;
+  margin-left: 4px;
+  padding-top: 9px;
+  text-align: center;
   text-decoration: none;
-  color: white;
 	transition: all .5s;
 }
 
@@ -225,17 +215,16 @@ body {
 }
 
 .buttons #linkedin {
-  margin-left: 4px;
   display: block;
-  text-align: center;
-  height: 50px;
   width: 50px;
-  padding-top: 8px;
+  height: 50px;
   border: 1px solid white;
   border-radius: 50%;
   background-color: #0077b5;
+  margin-left: 4px;
+  padding-top: 8px;
+  text-align: center;
   text-decoration: none;
-  color: white;
 	transition: all .5s;
 }
 
@@ -244,17 +233,16 @@ body {
 }
 
 #github {
-  margin-left: 4px;
   display: block;
-  text-align: center;
-  height: 50px;
   width: 50px;
-  padding-top: 3px;
+  height: 50px;
   border: 1px solid white;
   border-radius: 50%;
   background-color: #800080;
+  margin-left: 4px;
+  padding-top: 3px;
+  text-align: center;
   text-decoration: none;
-  color: white;
 	transition: all .5s;
 }
 
@@ -263,8 +251,8 @@ body {
 }
 
 #contact {
-  padding: 15px;
   float: right;
+  padding: 15px;
   font-size: 1.5em;
   font-weight: normal;
 }
@@ -273,11 +261,12 @@ body {
   margin-top: 5px;
 }
 
-#contact li:nth-child(1) {
-  margin-top: 5px;
-}
 #contact li {
   font-size: .7em;
+}
+
+#contact li:nth-child(1) {
+  margin-top: 5px;
 }
 /*End Footer*/
 
@@ -299,7 +288,6 @@ body {
   }
   #left-topimg > #dan-img { /*Profile Pic*/
     position: relative;
-    border-width: 3px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, 20%);
@@ -307,42 +295,33 @@ body {
     -ms-transform: translate(-50%, 20%);
     -o-transform: translate(-50%, 20%);
     transform: translate(-50%, 20%);
-    height: 200px;
     width: 200px;
+    height: 200px;
+    border-width: 3px;
   }
   #topblurb {
     text-align: center;
   }
   #topblurb h2 {
-    color: black;
-    background-image: none;
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
+    background-image: none;
   }
   #topblurb p {
     margin-top: -20px;
-  }
-  #portfolio {
-    margin-top: 0;
   }
   #contact-buttons {
     margin-top: 5px;
     margin-bottom: 15px;
   }
   .buttons {
-  overflow: hidden;
-  display: inline-block;
-  padding: 0px;
   margin-bottom: 8px
-  -webkit-font-smoothing: antialiased;
+  /*-webkit-font-smoothing: antialiased;
   speak: none;
-  line-height: 1;
+  line-height: 1;*/
   text-transform: none;
 }
   #contact-buttons > .buttons {
-    overflow: hidden;
     position: relative;
     top: 50%;
     left: 50%;
@@ -356,9 +335,9 @@ body {
     margin-right: 4px;
   }
   #contact-row hr {
-    margin-top: 30px;
-    border: 1px solid white;
     width: 50%;
+    border: 1px solid white;
+    margin-top: 30px;
   }
   #contact {
     padding: 0px 15px 0px 25px;
@@ -374,8 +353,8 @@ body {
     margin-right: 27px;
   }
   div #navbar-collapse-1 {
-    width: 50%;
     float: right;
+    width: 50%;
   }
   .divider {
     border-bottom: 1px solid white;
@@ -386,7 +365,6 @@ body {
   }
   #left-topimg > #dan-img { /*Profile Pic*/
     position: relative;
-    border-width: 3px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, 20%);
@@ -394,42 +372,33 @@ body {
     -ms-transform: translate(-50%, 20%);
     -o-transform: translate(-50%, 20%);
     transform: translate(-50%, 20%);
-    height: 200px;
     width: 200px;
+    height: 200px;
+    border-width: 3px;
   }
   #topblurb { /*Attributes Box*/
     text-align: center;
   }
   #topblurb h2 {
-    color: black;
     background-image: none;
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
   }
   #topblurb p {
     margin-top: -20px;
   }
-  #portfolio {
-    margin-top: 0;
-  }
   #contact-buttons {
     margin-top: 5px;
     margin-bottom: 15px;
   }
   .buttons {
-  overflow: hidden;
-  display: inline-block;
   padding: 0px;
-  margin-bottom: 8px
-    -webkit-font-smoothing: antialiased;
+  /*-webkit-font-smoothing: antialiased;
   speak: none;
-  line-height: 1;
+  line-height: 1;*/
   text-transform: none;
 }
   #contact-buttons > .buttons {
-    overflow: hidden;
     position: relative;
     top: 50%;
     left: 50%;
