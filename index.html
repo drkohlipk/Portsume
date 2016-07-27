@@ -7,8 +7,10 @@
     <title>PJ's Portfolio Page!</title>
     <script src="https://use.fontawesome.com/bd7a24afcb.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/flipster.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Passion+One:900|Ceviche+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
@@ -47,27 +49,56 @@
       </nav>
     </header>
     <div class="container-fluid" id="top-content">
-    <!--<img src="images/HawaiinTreeBark.jpg" class="img-responsive" id="top-bgimg" alt="Hawaiian Tree Bark Background">-->
-      <div class="container">
-        <div class="row" id="imgbgrow">
-          <div class="col-md-6 col-sm-12 col-xs-12" id="left-topimg">
-            <img src="images/Profilepic.jpg" id="dan-img" alt="Profile pic"/>
-          </div>
-          <div class="col-md-6 col-sm-12 col-xs-12 text-right" id="topblurb"><h2>I am a</h2>
-          <p>Leader</p>
-          </div>
-        </div>
-      </div>
+			<div class="container">
+				<div class="col-md-6 col-sm-12 col-xs-12" id="left-topimg">
+						<img src="images/Profilepic.jpg" id="dan-img" alt="Profile pic"/>
+				</div>				
+				<div class="col-md-6 col-sm-12 col-xs-12" id="topblurb"><h2>Lorem</h2>
+					<p>Ipsum</p>
+				</div>
+			</div>
     </div>
     <div class="container-fluid">
 			<hr class="sep">
 			<div class="container">
-				<div class="row abtsxn" id="portfolio">
-					<div class="col-xs-12 text-uppercase text-left title" id="port-title">PORTFOLIO
+				<div class="row abtsxn" id="atAGlance">
+					<div class="col-xs-6 text-left content" id="aag-content">
+						<p><span id="leftQuote">&#8220;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span id="rightQuote">&#8221;</span></p>
+						<p>~~Author</p>
 					</div>
-					<hr class="title-hr">
+					<div class="col-xs-3" class="skillist">
+						<ul>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+						</ul>
+					</div>
+					<div class="col-xs-3" class="skillist">
+						<ul>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr class="sep">
+			<div class="container">
+				<div class="row abtsxn" id="portfolio">
+					<div class="col-xs-12 text-uppercase text-right title" id="port-title">PORTFOLIO
+					</div>
+					<hr id="port-hr">
 					<div class="col-xs-8 text-left content" id="port-content">
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
+						<div class="my-flipster">
+							<ul>
+								<li><img src="" /></li>
+								<li><p>Plain ol' <abbr>HTML</abbr>!</p></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -136,7 +167,8 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>		
+		<script src="js/jquery.flipster.min.js"></script>
     <script type="text/javascript" src="js/resume.js"></script>
   </body>
 </html>
