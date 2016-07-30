@@ -20,9 +20,19 @@ a:focus, a:visited {
   padding: 0;
 }
 
+body {
+	background: url("../images/HawaiianTreeBark.jpg") no-repeat center;
+  background-attachment: fixed;
+	background-size: cover;
+}
+
+#mainContent {
+	background-color: white;
+}
+
 /*Start Header*/
 #topbar { /*Top Navbar*/
-  background: rgba(48,67,67,0.7);
+  background: rgba(48,67,67,1);
 	border: none;
 }
 
@@ -65,16 +75,8 @@ a:focus, a:visited {
 /*End Header*/
 
 /*Start Pic and Blurb*/
-body {
-	background: url("../images/HawaiianTreeBark.jpg") no-repeat center;
-  background-attachment: fixed;
-	background-size: cover;
-}
 
-#mainContent {
-	background-color: white;
-}
-#top-content { /*Need to come up with different sizes for media queries!*/
+#top-content {
 	min-height: 450px;
   /*background: url("../images/HawaiianTreeBark.jpg") no-repeat;
 	background-size: contain;
@@ -165,21 +167,22 @@ body {
 	font-family: cursive;
 	opacity: .2;
 }
-
-#rightQuote {
-	position: absolute;
-	top: 40px;	
-	left: 180px;
-	font-size: 150px;
-	font-family: cursive;
-	opacity: .2;
-}
 /*End At A Glance Section*/
 
 
 /*Start Portfolio Section*/
+#portSep {
+	height: 1px;
+	background-color: lightgray;
+	box-shadow: none;
+}
+
 #portfolio {
 	min-height: 500px;
+}
+
+#port-title {
+	margin-top: 20px;
 }
 
 #port-hr {
@@ -215,12 +218,11 @@ body {
 
 #work-hr {
 	float: left;
-	width: 300px;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
-  background-image: -moz-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
-  background-image: -ms-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
-  background-image: -o-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0));
+	width: 450px;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
+  background: -moz-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
+  background: -ms-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
+  background: -o-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0));
 	margin: 0 0 20px 15px;
 }
 
@@ -237,13 +239,48 @@ body {
 	background-color: rgba(255,255,255,.7);
 	background-size: contain;
 }
-
-
 /*End Work History Section*/
 
 
 /*Start Education Section*/
+#education {
+	min-height: 500px;
+}
 
+#ed-hr {
+	float: right;
+	width: 300px;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
+  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
+  background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));  
+	margin: 0 15px 0 0;
+}
+
+#ed-content {
+	margin: 10px 0 0 0;
+}
+
+.school {
+	align-content: center;
+	margin: 0;
+	padding: 0;
+}
+.schoolHr {
+	width: 100%;
+	height: 1px;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
+  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
+  background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
+	margin: 0 15px 20px 0;
+}
+
+.schoolLogo {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 15px;
+}
 /*End Education Section*/
 
 
@@ -375,9 +412,29 @@ body {
   font-weight: bold;
 }
 
+#inputs {
+	color: black;
+	padding: 20px 0 0 0;
+}
+
+.bottomInput {
+	width: 70%;
+	margin-bottom:10px;
+	border-radius: 5px;
+}
+
+#submitButton {
+	border: none;
+	border-radius: 5px;
+	background-color: lightgray;
+	transition: all .2s;
+}
+
+#submitButton:hover, #submitButton:focus {
+	box-shadow: 0px 0px 10px lightblue;
+}
 
 #contact {
-  float: right;
   padding: 15px;
   font-size: 1.5em;
   font-weight: normal;
@@ -393,6 +450,20 @@ body {
 
 #contact li:nth-child(1) {
   margin-top: 5px;
+}
+
+#contactInfo {
+	margin: 20px 0 0 0;
+}
+
+#contactInfo ul {
+	font-size: 1.5em;
+}
+
+#contactInfo li {
+	font-size: .7em;
+	margin: 10px 0 0 0;
+	list-style-type: none;
 }
 /*End Footer*/
 
