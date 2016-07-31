@@ -36,12 +36,12 @@ body {
 	border: none;
 }
 
-#logo { /*Logo Image*/
+/*#logo { 
   width: 150px;
   height: 50px;
   background: url('../images/PJLogo.jpg') no-repeat;
   margin-left: -35px;
-}
+}*/
 
 .navbar-brand > h1 { /*Navbar Name*/
   margin-top: 0;
@@ -60,12 +60,12 @@ body {
   font-family: 'Poiret One', sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  transition: all .5s;
+  transition: all .2s;
 }
 
 .navbar-default .navbar-nav > li > a:hover { /*Link Hover*/
   background-color: white;
-  color: #0e8466;
+  color: rgba(48,67,67,1);
   text-shadow: none;
 }
 
@@ -112,14 +112,15 @@ body {
 }
 
 #topblurb > p {
-	position:absolute;
-	top: 235px;
-	left: 330px;
-  font-size: 5em;
+	position: absolute;
+	top: 285px;
+	left: 220px;
+  font-size: 4em;
   color: white;
   font-family: cursive;
   font-weight: bold;
   text-shadow: 1px 1px 5px #222;
+	line-height: 1;
 }
 /*End Profile Pic and Blurb*/
 
@@ -195,8 +196,13 @@ body {
 	margin: 0 15px 20px 0;
 }
 
-#port-content {
+#port-coverflow {
 	margin: 50px 0 0 0;
+}
+
+#port-blurb {
+	font-size: 20px;
+	padding: 70px 0 0 20px;
 }
 /*End Portfolio Section*/
 
@@ -204,12 +210,22 @@ body {
 /*Start Work History Section*/
 #workHistory {
 	position: relative;
-	height: 400px;
+	height: 500px;
 	background: url("../images/datJetAss.jpg") center no-repeat;
 	background-size: cover;
 	margin: 0;
 	padding: 0;
 	box-shadow: 0 -12px 12px -10px lightgray;
+}
+
+#workOvrly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	background-color: rgba(255,255,255,.7);
+	background-size: contain;
 }
 
 #wrkhis-title {
@@ -223,28 +239,51 @@ body {
   background: -moz-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -ms-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -o-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0));
-	margin: 0 0 20px 15px;
+	margin: 0 0 0 15px;
+}
+
+#workDates {
+	margin: 10px 0 10px;	
 }
 
 #wrkhis-content {
 	clear: left;
+	font-size: 20px;
+	margin: 0 0 0 0;
 }
 
-#workOvrly {
+#wrkhis-pic {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 400px;
-	background-color: rgba(255,255,255,.7);
+	top: 70px;
+	right: 0;
+	width: 300px;
+	height: 300px;
+	background-image: url("../images/300pxUSMCemblem.png");
 	background-size: contain;
+}
+
+#wrkhis-buttons {
+	position: absolute;
+	left: 0%;
+	bottom: 10px;
+}
+
+span.historyBtn {
+	margin: 0px 70px;
+	font-size: 20px;
+	transition: all .2s;
+}
+
+.historyBtn:hover, .historyBtn:focus {
+	border-bottom: 1px solid black;
+	cursor: pointer;
 }
 /*End Work History Section*/
 
 
 /*Start Education Section*/
 #education {
-	min-height: 500px;
+	min-height: 700px;
 }
 
 #ed-hr {
@@ -258,22 +297,24 @@ body {
 }
 
 #ed-content {
-	margin: 10px 0 0 0;
+	margin: 40px 0 40px 0;
 }
 
 .school {
 	align-content: center;
-	margin: 0;
+	height: 320px;
+	margin-bottom: 20px;
 	padding: 0;
+	font-size: 20px;
 }
 .schoolHr {
-	width: 100%;
+	width: 90%;
 	height: 1px;
 	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
-	margin: 0 15px 20px 0;
+	margin: 10px 10px 10px;
 }
 
 .schoolLogo {
