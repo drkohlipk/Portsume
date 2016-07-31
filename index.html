@@ -36,11 +36,15 @@
             <ul id="nav-list" class="nav navbar-nav navbar-right">
               <li>
                 <!--Need to come up with better names for sections-->
-                <a href="#top">About<span class="sr-only">(current)</span></a>
+                <a href="#top">Top<span class="sr-only">(current)</span></a>
               </li>
               <li role="separator" class="divider"></li>
               <li>
                 <a href="#portfolio">Portfolio</a>
+              </li>
+							<li role="separator" class="divider"></li>
+              <li>
+                <a href="#workHistory">Resume</a>
               </li>
               <li role="separator" class="divider"></li>
               <li>
@@ -56,8 +60,8 @@
 				<div class="col-md-6 col-sm-12 col-xs-12" id="left-topimg">
 						<img src="images/Profilepic.jpg" id="dan-img" alt="Profile pic"/>
 				</div>				
-				<div class="col-md-6 col-sm-12 col-xs-12" id="topblurb"><h2>Lorem</h2>
-					<p>Ipsum</p>
+				<div class="col-md-6 col-sm-12 col-xs-12" id="topblurb"><h2>I am</h2>
+					<p id="descriptor"></p>
 				</div>
 			</div>
     </div>
@@ -95,38 +99,23 @@
 					<div class="col-xs-12 text-uppercase text-right title" id="port-title">PORTFOLIO
 					</div>
 					<hr class="title-hr" id="port-hr">
-					<article class="col-xs-8" id="port-content">
+					<article class="col-xs-8" id="port-coverflow">
 						<div id="coverflow">
 							<ul class="flip-items">
-								<li data-flip-title="Red">
-										<img src="img/text1.gif">
+								<li data-flip-title="PJ's Weather App">
+									<a href="http://codepen.io/drkohli/full/bZYWax/" target="_blank"><img src="images/PJs%20WX%20App.png"></a>
 								</li>
-								<li data-flip-title="Razzmatazz" data-flip-category="Purples">
-										<img src="img/text2.gif">
+								<li data-flip-title="PJ's Wicked Wiki-gen">
+									<a href="http://codepen.io/drkohli/full/zBPLLE/" target="_blank"><img src="images/WickedWiki.png"></a>
 								 </li>
-								<li data-flip-title="Deep Lilac" data-flip-category="Purples">
-										<img src="img/text3.gif">
+								<li data-flip-title="PJ's Twitch.TV Viewport">
+										<a href="http://codepen.io/drkohli/full/grvXdB/" target="_blank"><img src="images/PJsTwitchTVPorthole.png"></a>
 								</li>
-								<li data-flip-title="Daisy Bush" data-flip-category="Purples">
-										<img src="img/text4.gif">
+								<li data-flip-title="Costa Rica 2004">
+									<a href="http://www2.lv.psu.edu/jxm57/explore/costarica2006/index.html" target="_blank"><img src="images/costaRica.png"></a>
 								</li>
-								<li data-flip-title="Cerulean Blue" data-flip-category="Blues">
-										<img src="img/text5.gif">
-								</li>
-								<li data-flip-title="Dodger Blue" data-flip-category="Blues">
-										<img src="img/text6.gif">
-								</li>
-								<li data-flip-title="Cyan" data-flip-category="Blues">
-										<img src="img/text7.gif">
-								</li>
-								<li data-flip-title="Robin's Egg" data-flip-category="Blues">
-										<img src="img/text8.gif">
-								</li>
-								<li data-flip-title="Deep Sea" data-flip-category="Greens">
-										<img src="img/text9.gif">
-								</li>
-								<li data-flip-title="Apple" data-flip-category="Greens">
-										<img src="img/text10.gif">
+								<li data-flip-title="Peru 2005">
+									<a href="http://www2.lv.psu.edu/jxm57/explore/peru/index.html" target="_blank"><img src="images/peru.png"></a>
 								</li>
 							</ul>
 						</div>
@@ -134,6 +123,9 @@
 								var coverflow = $("#coverflow").flipster();
 						</script>
 					</article>
+					<div class="col-xs-4" id="port-blurb">
+						<p>Take a peek at some of the projects that I've worked on in the past!<br><br>This section will continue to evolve so keep checking back to see what cool new projects I come up with.</p>
+					</div>
 				</div>
 			</div>
 			<section id="workHistory">
@@ -143,9 +135,17 @@
 						<div class="col-xs-12 text-left text-uppercase title" id="wrkhis-title">WORK HISTORY
 						</div>
 						<hr class="title-hr" id="work-hr">
+						<div class="col-xs-12 text-left" id="workDates">Dates: October 2011 to Present</div>
 						<div class="col-xs-8 text-left" id="wrkhis-content">
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. </p>
 						</div>
+						<div class="col-xs-4" id="wrkhis-pic">
+						</div>
+					</div>
+					<div class="col-xs-12 text-center" id="wrkhis-buttons">
+						<span class="historyBtn" id="ftrPilot">Fighter Pilot</span>
+						<span class="historyBtn" id="officer">Marine Corps Officer</span>
+						<span class="historyBtn" id="ta">Teaching Assistant/Web Developer</span>
 					</div>
 				</div>
 			</section>
@@ -157,76 +157,99 @@
 					<hr class="title-hr" id="ed-hr">
 					<div class="col-xs-12" id="ed-content">
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: UX Design Tools: Balsamiq Mockups</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: Design the Web: CSS-Controlled SVG with PHP</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: Design the Web: Graphics and CSS Pseudo-Elements</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: Design the Web: CSS Animated Rollovers</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: Become a User Experience Designer</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: UX Design Tools: Illustrator</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: UX Design Tools: Photoshop</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Lynda.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/lynda.jpeg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: UX Design Techniques: Paper Prototyping</p>
+						</article>
+						<article class="col-xs-2 school">
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
+							<hr class="schoolHr center-block">
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: UX Design Techniques: Creating Scenarios and Storyboards</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">freeCodeCamp.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/freecodecamp.png" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: UX Design Techniques: Ideation</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Udacity.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/udacity.jpg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: Learn Sketch: The Basics</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Udacity.com</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/udacity.jpg" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: Foundations of UX: Multidevice Design</p>
 						</article> 
 						<article class="col-xs-2 school">
-							<h2 class="text-center schoolTitle">Penn State University</h2>
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
 							<hr class="schoolHr center-block">
-							<img src="images/psu.png" class="schoolLogo center-block">
-							<p class="classInfo text-center">Dates: Lorem<br>Certificate: Ipsum</p>
+							<p class="classInfo text-center">Date: June 2016<br>Certificate: Foundations of UX: Prototyping</p>
+						</article> 
+						<article class="col-xs-2 school">
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
+							<hr class="schoolHr center-block">
+							<p class="classInfo text-center">Date: June 2016<br>Certificate: UX Design Techniques: Overview</p>
+						</article> 
+						<article class="col-xs-2 school">
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo center-block"></a>
+							<hr class="schoolHr center-block">
+							<p class="classInfo text-center">Date: July 2016<br>Certificate: Planning a Career in User Experience</p>
+						</article> 
+						<article class="col-xs-2 school">
+							<a href="https://www.freecodecamp.com/" target="_blank" title="freeCodeCamp.com"><img src="images/freecodecamp.png" class="schoolLogo center-block"></a>
+							<hr class="schoolHr center-block">
+							<p class="classInfo text-center">Dates: June 2016 to Present<br>Certificate: Front End Development </p>
+						</article> 
+						<article class="col-xs-2 school">
+							<a href="https://www.freecodecamp.com/" target="_blank" title="freeCodeCamp.com"><img src="images/freecodecamp.png" class="schoolLogo center-block"></a>
+							<hr class="schoolHr center-block">
+							<p class="classInfo text-center">Dates: June 2016 to Present<br>Certificate: Full Stack Development </p>
+						</article>
+						<article class="col-xs-2 school">
+							<a href="https://www.udacity.com/" target="_blank" title="Udacity.com"><img src="images/udacity.jpg" class="schoolLogo center-block"></a>
+							<hr class="schoolHr center-block">
+							<p class="classInfo text-center">Dates: May to June 2016<br>Certificate: Intro to HTML and CSS</p>
+						</article>
+						<article class="col-xs-2 school">
+							<a href="http://www.psu.edu/" target="_blank" title="Penn State University"><img src="images/psu.png" class="schoolLogo center-block"></a>
+							<hr class="schoolHr center-block">
+							<p class="classInfo text-center">Dates: September 2003 to August 2007<br>Certificate: BS Biology: Neuroscience</p>
 						</article> 
 					</div>
 				</div>
@@ -285,7 +308,7 @@
       </div>
     </footer>
 		<script>
-        $(".navbar-fixed-top").autoHidingNavbar();
+      $(".navbar-fixed-top").autoHidingNavbar();
 		</script>
   </body>
 </html>
