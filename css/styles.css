@@ -17,6 +17,10 @@ body {
 	background-size: cover;
 }
 
+.row {
+	width: 100%;
+}
+
 #mainContent {
 	background-color: white;
 }
@@ -108,8 +112,8 @@ body {
 	left: 220px;
   font-size: 4em;
   color: white;
-  font-family: cursive;
-  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   text-shadow: 1px 1px 5px #222;
 	line-height: 1;
 }
@@ -565,15 +569,6 @@ span.historyBtn {
 
 /************************Small Devices************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-	.container-fluid {
-		margin: 0;
-		padding: 0;
-	}
-
-	.container {
-		padding: 0;
-	}
   /*Start Header*/
 	#topbar { /*Top Navbar*/
 		height: 60px;
@@ -601,14 +596,13 @@ span.historyBtn {
 	/*End Header*/
 
 	/*Start Pic and Blurb*/
-
 	#top-content {
 		min-height: 430px;
 	}
 
 	#dan-img {
 		top: 100px;
-		left: 265px;
+		left: 270px;
 		border: 3px solid white;
 		width: 200px;
 		height: 200px;
