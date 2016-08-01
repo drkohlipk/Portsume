@@ -26,7 +26,7 @@ $(function() {
 	$('#ta').on("click", function() {
 		$('#workHistory').css({"background":"url('../images/PSUclass.jpg') center no-repeat", "background-size":"cover"});
 		$('#workDates').text('Dates: September 2004 to June 2006');
-		$('#wrkhis-content').text("Assisted students in the learning and development of their knowledge in the field of Biology.  Was entrusted with the grading of exams, papers, and other assignments.  Built the web pages for Dr. Jacqueline McLaughlin for the C.H.A.N.C.E. 2004 and 2005 field trips.");
+		$('#wrkhis-content').text("Assisted students in the learning and development of their knowledge in the field of Biology.  Was entrusted with the grading of exams, papers, and other assignments.  Built the web pages for Dr. Jacqueline McLaughlin for the C.H.A.N.C.E. 2004 field trip to Peru and 2006 field trip to Costa Rica.");
 		$('#wrkhis-pic').css({"background":"url('../images/300pxPSU.png') center no-repeat", "background-size":"cover"});
 	});
 	$("#nameEnter").on("click", function(){ //when the searchbar is clicked, 'search' is removed
