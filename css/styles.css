@@ -20,6 +20,15 @@ body {
 .row {
 	width: 100%;
 }
+	
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding: 0;
+}
 
 #mainContent {
 	background-color: white;
@@ -65,14 +74,9 @@ body {
   border-bottom: 4px solid white;
 	color: white;
 }
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /*Link Dropdown*/
-  border: 1px solid white;
-}
 /*End Header*/
 
 /*Start Pic and Blurb*/
-
 #top-content {
 	min-height: 470px;
 	padding: 0;
@@ -214,6 +218,7 @@ body {
 /*Start Work History Section*/
 #workHistory {
 	position: relative;
+	width: 100%;
 	height: 500px;
 	background: url("../images/datJetAss.jpg") center no-repeat;
 	background-size: cover;
@@ -306,27 +311,37 @@ span.historyBtn {
 }
 
 .school {
-	align-content: center;
-	height: 320px;
-	margin-bottom: 20px;
+	margin: 20px;
 	padding: 0;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .schoolHr {
-	width: 90%;
+	width: 100%;
 	height: 1px;
 	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
   background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
-	margin: 10px 10px 10px;
 }
 
 .schoolLogo {
-	width: 150px;
-	height: 150px;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
 	margin-bottom: 15px;
+	vertical-align: top;
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.schoolLogo:hover, .schoolLogo:focus {
+	border: 1px solid black;
+}
+
+.classInfo {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 50px;
 }
 /*End Education Section*/
 
@@ -336,8 +351,6 @@ span.historyBtn {
 	min-height: 200px;
 	width: 100%;
 	background-color: rgba(0,0,0,0) !important;
-  /*background: url("../images/HawaiianTreeBark.jpg") center no-repeat;
-	background-size: cover;*/
 	padding: 0;
 }
 
@@ -519,26 +532,10 @@ span.historyBtn {
 
 /************************Large Devices***********************/
 @media only screen and (min-width: 1200px){
-	.container-fluid {
-		margin: 0;
-		padding: 0;
-	}
-
-	.container {
-		padding: 0;
-	}
 }
 
 /************************Medium Devices***********************/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.container-fluid {
-		margin: 0;
-		padding: 0;
-	}
-
-	.container {
-		padding: 0;
-	}
 	/*Start Header*/
 	#name { /*Navbar Name*/
 		margin: 30px 0 20px 15px;
@@ -562,13 +559,22 @@ span.historyBtn {
 
 	/*Start Education Section*/
 	#ed-content {
-		margin: 40px 0 0 0;
+		margin: 40px 0 40px 0;
 	}
 	/*End Education Section*/
 }
 
 /************************Small Devices************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.container-fluid {
+		margin: 0;
+		padding: 0;
+	}
+
+	.container {
+		padding: 0;
+	}
   /*Start Header*/
 	#topbar { /*Top Navbar*/
 		height: 60px;
@@ -681,338 +687,268 @@ span.historyBtn {
 	}
 
 	#wrkhis-pic {
-		position: absolute;
-		top: 70px;
 		right: 20px;
 		width: 200px;
 		height: 200px;
-		background-image: url("../images/300pxUSMCemblem.png");
-		background-size: contain;
-	}
-
-	#wrkhis-buttons {
-		position: absolute;
-		left: 0%;
-		bottom: 10px;
 	}
 
 	span.historyBtn {
-		margin: 0px 70px;
-		font-size: 20px;
-		transition: all .2s;
-	}
-
-	.historyBtn:hover, .historyBtn:focus {
-		border-bottom: 1px solid black;
-		cursor: pointer;
+		margin: 0px 30px;
+		font-size: 16px;
 	}
 	/*End Work History Section*/
 
 
 	/*Start Education Section*/
-	#education {
-		min-height: 700px;
-	}
-
 	#ed-hr {
-		float: right;
-		width: 300px;
-		background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
-		background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
-		background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
-		background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));  
-		margin: 0 15px 0 0;
+		width: 250px;
 	}
 
 	#ed-content {
-		margin: 40px 0 40px 0;
+		margin: 0;
 	}
 
 	.school {
-		align-content: center;
-		height: 320px;
-		margin-bottom: 20px;
-		padding: 0;
+		margin: 20px 0 20px 0;
 		font-size: 16px;
-	}
-
-	.schoolHr {
-		width: 90%;
-		height: 1px;
-		background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
-		background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
-		background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
-		background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
-		margin: 10px 10px 10px;
 	}
 
 	.schoolLogo {
-		width: 150px;
-		height: 150px;
-		margin-bottom: 15px;
+		width: 175px;
+		height: 175px;
+	}
+
+	.classInfo {
+		margin: 0 0 0 30px;
 	}
 	/*End Education Section*/
-
-
-	/*Start Contact Window Section*/
-	#contactWindow {
-		min-height: 200px;
-		width: 100%;
-		background-color: rgba(0,0,0,0) !important;
-		padding: 0;
-	}
-
-	#contact-buttons {
-		margin-top: 75px;
-		width: 100%;
-	}
-
-	.buttons {
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 0px;
-		text-transform: none;
-		vertical-align: top;
-		overflow: hidden;
-	}
-
-	.buttons #e-mail {
-		display: block;
-		width: 50px;
-		height: 50px;
-		background-color: #BF2E25;
-		padding-top: 10px;
-		color: white;
-		text-align: center;
-		text-decoration: none;
-		transition: all .5s;
-	}
-
-	#e-mail:hover {
-		background-color: #df4f47;
-		border-radius: 50%;
-	}
-
-	.buttons #facebook {
-		display: block;
-		width: 50px;
-		height: 50px;
-		background-color: #3b5998;
-		margin-left: 20px;
-		padding-top: 11px;
-		padding-left: 6px;
-		color: white;
-		text-align: center;
-		text-decoration: none;
-		transition: all .5s;
-	}
-
-	#facebook:hover {
-		background-color: #5d7bba;
-		border-radius: 50%;
-	}
-
-	.buttons #linkedin {
-		display: block;
-		width: 50px;
-		height: 50px;
-		background-color: #0077b5;
-		margin-left: 20px;
-		padding-top: 10px;
-		color: white;
-		text-align: center;
-		text-decoration: none;
-		transition: all .5s;
-	}
-
-	#linkedin:hover {
-		background-color: #2299d7;
-		border-radius: 50%;
-	}
-
-	#github {
-		display: block;
-		width: 50px;
-		height: 50px;
-		background-color: #800080;
-		margin-left: 20px;
-		padding-top: 4px;
-		color: white;
-		text-align: center;
-		text-decoration: none;
-		transition: all .5s;
-	}
-
-	#github:hover {
-		background-color: #a222a2;
-		border-radius: 50%;
-	}
-
-	#codepen {
-		display: block;
-		width: 50px;
-		height: 50px;
-		background-color: #000000;
-		margin-left: 20px;
-		padding-top: 4px;
-		color: white;
-		text-align: center;
-		text-decoration: none;
-		transition: all .5s;
-	}
-
-	#codepen:hover {
-		background-color: #333333;
-		border-radius: 50%;
-	}
-	/*End Contact Window Section*/
 	/*End About Section*/
 
 	/*Start Footer*/
-	#footer {
-		height: auto;
-		border: none;
-		background-color: rgba(48,67,67,1);;
-		margin: 0;
-		color: white;
-		font-family: 'Lato', sans-serif;
-	}
-
 	#inputs {
-		color: black;
-		font-weight: 400;
-		padding: 20px 0 0 0;
+		padding: 20px 0 0 10px;
+		font-size: 12px;
 	}
-
-	.bottomInput {
-		width: 70%;
-		margin-bottom:10px;
-		border-radius: 5px;
-	}
-
-	#submitButton {
-		border: none;
-		border-radius: 5px;
-		background-color: lightgray;
-		transition: all .2s;
-	}
-
-	#submitButton:hover, #submitButton:focus {
-		box-shadow: 0px 0px 10px lightblue;
+	
+	#messageEnter {
+		height: 100px
 	}
 
 	#contact {
-		padding: 15px;
-		font-size: 18px;
-		font-weight: normal;
+		font-size: 16px;
+		line-height: 1.3
 	}
 
 	#contact ul {
-		margin-top: 5px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	#contact li {
 		font-size: .9em;
-		line-height: 1.6;
-	}
-
-	#contact li:nth-child(1) {
-		margin-top: 10px;
-	}
-
-	#contactInfo {
-		margin: 20px 0 0 0;
 	}
 
 	#contactInfo ul {
-		font-size: 25px;
+		font-size: 16px;
 	}
 
 	#contactInfo li {
-		margin: 10px 0 0 0;
-		font-size: 15px;
-		font-weight: 400;
-		list-style-type: none;
+		font-size: 14px;
 	}
 	/*End Footer*/
 }
 
 /*********************Extra Small Devices*********************/
-@media only screen and (max-width: 767px) {
-  .container .navbar-header div > #name {
-    margin-left: 10px;
-  }
-  .container .navbar-header #menu-toggle {
-    margin-right: 27px;
-  }
-  div #navbar-collapse-1 {
-    float: right;
-    width: 50%;
-  }
-  .divider {
-    border-bottom: 1px solid white;
-  }
-  #left-topimg { /*Profile Pic Box*/
-    margin-top: 0px;
-    margin-bottom: 35px;
-  }
-  #left-topimg > #dan-img { /*Profile Pic*/
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 20%);
-    -moz-transform: translate(-50%, 20%);
-    -ms-transform: translate(-50%, 20%);
-    -o-transform: translate(-50%, 20%);
-    transform: translate(-50%, 20%);
-    width: 200px;
-    height: 200px;
-    border-width: 3px;
-  }
-  #topblurb { /*Attributes Box*/
-    text-align: center;
-  }
-  #topblurb h2 {
-    background-image: none;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  #topblurb p {
-    margin-top: -20px;
-  }
-  #contact-buttons {
-    margin-top: 5px;
-    margin-bottom: 15px;
-  }
-  .buttons {
-  padding: 0px;
-  /*-webkit-font-smoothing: antialiased;
-  speak: none;
-  line-height: 1;*/
-  text-transform: none;
-}
-  #contact-buttons > .buttons {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-220%, 20%);
-    -moz-transform: translate(-220%, 20%);
-    -ms-transform: translate(-220%, 20%);
-    -o-transform: translate(-220%, 20%);
-    transform: translate(-220%, 20%);
-  }
-  .buttons #e-mail {
-    margin-right: 4px;
-  }
-  #contact-row hr {
-    margin-top: 30px;
-    border: 1px solid white;
-    width: 50%;
-  }
-  #contact {
-    margin-top: -10px;
-    padding: 0px 15px 0px 25px;
-  }
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+	.container-fluid {
+		margin: 0;
+		padding: 0;
+	}
+
+	.container {
+		padding: 0;
+	}
+  /*Start Header*/
+	#topbar { /*Top Navbar*/
+		height: 60px;
+	}
+
+	#name { /*Navbar Name*/
+		margin: 22px 0 0 20px;
+		font-size: 30px;
+	}
+	
+	.navbar-header button.navbar-toggle {
+		margin: 10px 22px 0 0;
+	}
+	
+	.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /*Link Dropdown*/
+  	border: 1px solid white;
+	}
+
+	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
+		height: 60px;
+		width: 70px;
+		padding: 20px 0px;
+		font-size: 15px;
+	}
+
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Link Hover*/
+		border-bottom: 2px solid white;
+	}
+	/*End Header*/
+
+	/*Start Pic and Blurb*/
+	#top-content {
+		min-height: 430px;
+	}
+
+	#dan-img {
+		top: 100px;
+		left: 270px;
+		border: 3px solid white;
+		width: 200px;
+		height: 200px;
+	}
+
+	#topblurb > h2 {
+		position: absolute;
+		top: 160px;
+		left: 250px;
+		font-size: 60px;
+	}
+
+	#topblurb > p {
+		top: 350px;
+		left: 300px;
+		font-size: 50px;
+	}
+	/*End Profile Pic and Blurb*/
+
+	/*Start About Section*/
+	.title {
+		font-size: 30px;
+	}
+
+	/*Start At A Glance Section*/
+	#atAGlance {
+		min-height: 450px;
+	}
+
+	#aagContent {
+		font-size: 16px;
+	}
+
+	#leftQuote {
+		position: absolute;
+		top: -23px;	
+		left: 5px;
+		font-size: 100px;
+	}
+
+	#skillist {
+		background: url(../images/Skills.png) top center no-repeat;
+	}
+	/*End At A Glance Section*/
+
+
+	/*Start Portfolio Section*/
+	#port-coverflow {
+		margin: 20px 0 0 0;
+	}
+
+	#port-blurb {
+		padding: 60px 10px 0 30px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.3;
+	}
+	/*End Portfolio Section*/
+
+
+	/*Start Work History Section*/
+	#wrkhis-title {
+		margin-top: 15px;
+	}
+
+	#work-hr {
+		width: 300px;
+	}
+
+	#workDates {
+		font-size: 12px;
+	}
+
+	#wrkhis-content {
+		font-size: 16px;
+	}
+
+	#wrkhis-pic {
+		right: 20px;
+		width: 200px;
+		height: 200px;
+	}
+
+	span.historyBtn {
+		margin: 0px 30px;
+		font-size: 16px;
+	}
+	/*End Work History Section*/
+
+
+	/*Start Education Section*/
+	#ed-hr {
+		width: 250px;
+	}
+
+	#ed-content {
+		margin: 0;
+	}
+
+	.school {
+		margin: 20px 0 20px 0;
+		font-size: 16px;
+	}
+
+	.schoolLogo {
+		width: 175px;
+		height: 175px;
+	}
+
+	.classInfo {
+		margin: 0 0 0 30px;
+	}
+	/*End Education Section*/
+	/*End About Section*/
+
+	/*Start Footer*/
+	#inputs {
+		padding: 20px 0 0 10px;
+		font-size: 12px;
+	}
+	
+	#messageEnter {
+		height: 100px
+	}
+
+	#contact {
+		font-size: 16px;
+		line-height: 1.3
+	}
+
+	#contact ul {
+		font-size: 14px;
+	}
+
+	#contact li {
+		font-size: .9em;
+	}
+
+	#contactInfo ul {
+		font-size: 16px;
+	}
+
+	#contactInfo li {
+		font-size: 14px;
+	}
+	/*End Footer*/
 }
