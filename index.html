@@ -72,7 +72,7 @@
 						<p><span id="leftQuote">&#8220;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
 						<p>~~Author</p>
 					</div>
-					<div class="col-md-7 col-xs-12" id="skillist">						
+					<div class="col-md-7 col-xs-12" id="skillist">
 					</div>
 				</div>
 			</div>
@@ -107,7 +107,8 @@
 						</script>
 					</article>
 					<div class="col-sm-4 col-xs-12" id="port-blurb">
-						<p>Take a peek at some of the projects that I've worked on in the past!<br><br>This section will continue to evolve so keep checking back to see what cool new projects I come up with.</p>
+						<p class="hidden-xs">Take a peek at some of the projects that I've worked on in the past!<br><br>This section will continue to evolve so keep checking back to see what cool new projects I come up with.</p>
+						<p class="visible-xs">Take a peek at some of the projects that I've worked on in the past!<br>This section will continue to evolve so keep checking back to see what cool new projects I come up with.</p>
 					</div>
 				</div>
 			</div>
@@ -198,7 +199,7 @@
 		<div class="container-fluid">
 			<div id="contactWindow">
 				<div class="row">
-					<div class="col-xs-12 text-center" id="contact-buttons">
+					<div class="col-sm-12 hidden-xs text-center" id="contact-buttons">
         		<div class="buttons">
         		<a href="mailto:drkohlipk@gmail.com?" target="_top" title="E-mail Me!" id="e-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></div>
         		<div class="buttons">
@@ -210,13 +211,33 @@
 						<div class="buttons">
         		<a href="http://codepen.io/drkohli/" target="_blank" title="Check Out My Codepen!" id="codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a></div>
         	</div>
+					<div class="col-xs-12 visible-xs text-center" id="contact-buttons">
+        		<div class="buttons">
+        		<a href="mailto:drkohlipk@gmail.com?" target="_top" title="E-mail Me!" id="e-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://www.facebook.com/usmcltdan" rel="nofollow" title="Follow Me On Facebook!" target="_blank" id="facebook"><i class="fa fa-facebook-f fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://www.linkedin.com/in/daniel-kohli-299155118" target="_blank" title="Let's Connect On LinkedIn!" id="linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://github.com/drkohlipk" target="_blank" title="Check Out My Github!" id="github"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+						<div class="buttons">
+        		<a href="http://codepen.io/drkohli/" target="_blank" title="Check Out My Codepen!" id="codepen"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></div>
+        	</div>
 				</div>
 			</div>
 		</div>
     <footer class="panel-footer" id="footer">
     	<div class="container">
         <section class="row" id="contact-row">
-					<div class="col-xs-4" id="inputs">
+					<div class="col-xs-12 visible-sm visible-xs text-center contactInfo">
+						<ul>
+							<li>619.913.6197</li>
+							<li>drkohlipk@gmail.com</li>
+							<li>2465 Neoma St., San Deigo, CA 92109</li>
+						</ul>
+					</div>
+					<hr class="text-center visible-sm visible-xs" id="contactHr">
+					<div class="col-md-4 col-xs-6" id="inputs">
 						<form action="contact.php" method="post">
 							<input type="text" name="name"  value="Name" class="bottomInput" id="nameEnter"><br>
 							<input type="text" name="email" value="E-mail" class="bottomInput" id="emailEnter"><br>
@@ -224,7 +245,7 @@
 							<input type="submit" value="Submit" id="submitButton">
 						</form>
 					</div>
-        	<div class="col-xs-4" id="contact">
+        	<div class="col-md-4 col-xs-6" id="contact">
         	Feel free to contact me at any point in time regarding whatever you feel like talking about!
           	<ul>Topics include but are not limited to the following:
           		<li>Potential job opportunities</li>
@@ -234,7 +255,7 @@
           		<li>How cool dogs are</li>
           	</ul>
         	</div>
-					<div class="col-xs-4 text-right" id="contactInfo">
+					<div class="col-md-4 hidden-sm hidden-xs text-right contactInfo">
 						<ul><b>Contact Info:</b>
 							<li>619.913.6197</li>
 							<li>drkohlipk@gmail.com</li>

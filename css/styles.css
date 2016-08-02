@@ -15,6 +15,7 @@ body {
 	background: url("../images/HawaiianTreeBark.jpg") no-repeat center;
   background-attachment: fixed;
 	background-size: cover;
+	padding-top: 60px;
 }
 
 .row {
@@ -26,10 +27,6 @@ body {
 	padding: 0;
 }
 
-.container {
-	padding: 0;
-}
-
 #mainContent {
 	background-color: white;
 }
@@ -38,19 +35,19 @@ body {
 #topbar { /*Top Navbar*/
   background: rgba(48,67,67,1);
 	border: none;
-	height: 80px;
+	height: 60px;
 }
 
 #logo { 
   width: 137px;
-  height: 70px;
+  height: 50px;
   background: url('../images/PJLogo.png') no-repeat;
   margin: 5px 0 0 0;
 }
 
 #name { /*Navbar Name*/
 	display: inline-block;
-  margin: 30px 0 20px 350px;
+  margin: 20px 0 20px 350px;
   color: white;
   font-size: 3.0em;
   font-family: 'Lato', sans-serif;
@@ -60,9 +57,9 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a { /*Navbar Links*/
-	height: 80px;
+	height: 60px;
 	width: 100px;
-	padding: 30px 10px;
+	padding: 20px 10px;
   color: white;
   font-size: 1.4em;
   font-family: 'Lato', sans-serif;
@@ -88,7 +85,7 @@ body {
 
 #dan-img {
 	position: absolute;
-	top: 120px;
+	top: 90px;
 	left: 150px;
   border: 5px solid white;
   border-radius: 100%;
@@ -99,7 +96,7 @@ body {
 
 #topblurb > h2 {
 	position: absolute;
-	top: 80px;
+	top: 60px;
 	left: 150px;
   margin-top: 140px;
   color: black;
@@ -112,7 +109,7 @@ body {
 
 #topblurb > p {
 	position: absolute;
-	top: 285px;
+	top: 265px;
 	left: 220px;
   font-size: 4em;
   color: white;
@@ -518,11 +515,11 @@ span.historyBtn {
 	margin: 20px 0 0 0;
 }
 
-#contactInfo ul {
+.contactInfo ul {
 	font-size: 25px;
 }
 
-#contactInfo li {
+.contactInfo li {
 	margin: 10px 0 0 0;
 	font-size: 15px;
 	font-weight: 400;
@@ -538,14 +535,14 @@ span.historyBtn {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	/*Start Header*/
 	#name { /*Navbar Name*/
-		margin: 30px 0 20px 15px;
+		margin: 20px 0 20px 15px;
 	}
 	/*End Header*/
 
 	/*Start About Section*/
 	/*Start At A Glance Section*/
 	#skillist {
-		background-size: 580px 350px;
+		background-size: 560px 350px;
 	}
 	/*End At A Glance Section*/
 
@@ -566,29 +563,12 @@ span.historyBtn {
 
 /************************Small Devices************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-	.container-fluid {
-		margin: 0;
-		padding: 0;
-	}
-
-	.container {
-		padding: 0;
-	}
   /*Start Header*/
-	#topbar { /*Top Navbar*/
-		height: 60px;
-	}
-
-	#logo {
-		height: 50px;
-	}
-
 	#name { /*Navbar Name*/
-		margin: 22px 0 20px 140px;
+		margin: 22px 0 20px 150px;
 		font-size: 30px;
 	}
-
+	
 	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
 		height: 60px;
 		width: 70px;
@@ -597,7 +577,7 @@ span.historyBtn {
 	}
 
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Link Hover*/
-		border-bottom: 2px solid white;
+		border-bottom: 3px solid white;
 	}
 	/*End Header*/
 
@@ -607,7 +587,7 @@ span.historyBtn {
 	}
 
 	#dan-img {
-		top: 100px;
+		top: 60px;
 		left: 270px;
 		border: 3px solid white;
 		width: 200px;
@@ -616,13 +596,13 @@ span.historyBtn {
 
 	#topblurb > h2 {
 		position: absolute;
-		top: 160px;
-		left: 250px;
+		top: 120px;
+		left: 230px;
 		font-size: 60px;
 	}
 
 	#topblurb > p {
-		top: 350px;
+		top: 310px;
 		left: 300px;
 		font-size: 50px;
 	}
@@ -670,6 +650,10 @@ span.historyBtn {
 
 
 	/*Start Work History Section*/
+	#workHistory {
+		height: 350px;
+	}
+	
 	#wrkhis-title {
 		margin-top: 15px;
 	}
@@ -687,6 +671,7 @@ span.historyBtn {
 	}
 
 	#wrkhis-pic {
+		top: 50px;
 		right: 20px;
 		width: 200px;
 		height: 200px;
@@ -726,7 +711,7 @@ span.historyBtn {
 
 	/*Start Footer*/
 	#inputs {
-		padding: 20px 0 0 10px;
+		padding: 10px 0 0 10px;
 		font-size: 12px;
 	}
 	
@@ -736,7 +721,8 @@ span.historyBtn {
 
 	#contact {
 		font-size: 16px;
-		line-height: 1.3
+		line-height: 1.3;
+		padding: 10px;
 	}
 
 	#contact ul {
@@ -745,66 +731,66 @@ span.historyBtn {
 
 	#contact li {
 		font-size: .9em;
+		
 	}
 
-	#contactInfo ul {
-		font-size: 16px;
-	}
-
-	#contactInfo li {
+	.contactInfo li {
+		display: inline-block;
+		margin: 0 30px 15px;
 		font-size: 14px;
+	}
+	
+	#contactHr {
+		width: 90%;
+		height: 1px;
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0)); 
+		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 	}
 	/*End Footer*/
 }
 
 /*********************Extra Small Devices*********************/
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-	.container-fluid {
-		margin: 0;
-		padding: 0;
-	}
-
-	.container {
-		padding: 0;
-	}
   /*Start Header*/
-	#topbar { /*Top Navbar*/
-		height: 60px;
-	}
 
 	#name { /*Navbar Name*/
-		margin: 22px 0 0 20px;
+		margin: 22px 0 20px 40%;
 		font-size: 30px;
 	}
 	
-	.navbar-header button.navbar-toggle {
-		margin: 10px 22px 0 0;
+	#menu-toggle {
+		margin: 12px 15px 0 0;
 	}
 	
-	.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /*Link Dropdown*/
-  	border: 1px solid white;
+	.icon-bar {
+		border: 1px solid white;
 	}
-
+	
 	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
-		height: 60px;
-		width: 70px;
-		padding: 20px 0px;
+		height: 50px;
+		width: 100%;
 		font-size: 15px;
+		background-color: rgba(48,67,67,1);
+		padding-top: 15px;
+	}
+	
+	.divider {
+		height: .5px;
+		border: .5px solid white;
 	}
 
-	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Link Hover*/
-		border-bottom: 2px solid white;
-	}
 	/*End Header*/
 
 	/*Start Pic and Blurb*/
 	#top-content {
-		min-height: 430px;
+		min-height: 410px;
 	}
 
 	#dan-img {
-		top: 100px;
-		left: 270px;
+		top: 60px;
+		left: 37%;
 		border: 3px solid white;
 		width: 200px;
 		height: 200px;
@@ -812,14 +798,14 @@ span.historyBtn {
 
 	#topblurb > h2 {
 		position: absolute;
-		top: 160px;
-		left: 250px;
+		top: 120px;
+		left: 30%;
 		font-size: 60px;
 	}
 
 	#topblurb > p {
-		top: 350px;
-		left: 300px;
+		top: 310px;
+		left: 40%;
 		font-size: 50px;
 	}
 	/*End Profile Pic and Blurb*/
@@ -839,26 +825,30 @@ span.historyBtn {
 	}
 
 	#leftQuote {
-		position: absolute;
 		top: -23px;	
-		left: 5px;
+		left: 20px;
 		font-size: 100px;
 	}
 
 	#skillist {
 		background: url(../images/Skills.png) top center no-repeat;
+		background-size: contain;
+		margin-left: 20px;
+		width: 100%;
+		height: auto;
 	}
 	/*End At A Glance Section*/
 
 
 	/*Start Portfolio Section*/
 	#port-coverflow {
-		margin: 20px 0 0 0;
+		width: 100%;
+		margin: 10px 0 0 15px;
 	}
 
 	#port-blurb {
-		padding: 60px 10px 0 30px;
-		font-size: 16px;
+		padding: 20px 0 15px 30px;
+		font-size: 2.0vw;
 		font-weight: 400;
 		line-height: 1.3;
 	}
@@ -866,6 +856,10 @@ span.historyBtn {
 
 
 	/*Start Work History Section*/
+	#workHistory {
+		height: 350px;
+	}
+	
 	#wrkhis-title {
 		margin-top: 15px;
 	}
@@ -875,29 +869,31 @@ span.historyBtn {
 	}
 
 	#workDates {
-		font-size: 12px;
+		font-size: 1.7vw;
 	}
 
 	#wrkhis-content {
-		font-size: 16px;
+		margin-top: -5px;
+		font-size: 2.0vw;
 	}
 
 	#wrkhis-pic {
-		right: 20px;
-		width: 200px;
-		height: 200px;
+		top: 60px;
+		right: 0px;
+		width: 150px;
+		height: 150px;
 	}
 
 	span.historyBtn {
-		margin: 0px 30px;
-		font-size: 16px;
+		margin: 0px 20px;
+		font-size: 2.0vw;
 	}
 	/*End Work History Section*/
 
 
 	/*Start Education Section*/
 	#ed-hr {
-		width: 250px;
+		width: 230px;
 	}
 
 	#ed-content {
@@ -905,25 +901,73 @@ span.historyBtn {
 	}
 
 	.school {
-		margin: 20px 0 20px 0;
+		margin: 10px 0 10px 0;
 		font-size: 16px;
 	}
 
 	.schoolLogo {
-		width: 175px;
-		height: 175px;
+		width: 150px;
+		height: 150px;
 	}
 
 	.classInfo {
-		margin: 0 0 0 30px;
+		margin: 0 -50px 0 15px;
+		font-size: 2.0vw;
+		max-width: 375px;
 	}
 	/*End Education Section*/
 	/*End About Section*/
+	
+	/*Start Contact Window Section*/
+	#contactWindow {
+		min-height: 150px;
+	}
+
+	#contact-buttons {
+		margin-top: 60px;
+		margin-left: 15px;
+	}
+
+	.buttons #e-mail {
+		width: 35px;
+		height: 35px;
+		padding-top: 3px;
+	}
+
+	.buttons #facebook {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 11px;
+		padding-left: 6px;
+	}
+
+	.buttons #linkedin {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 4px;
+	}
+
+	#github {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 4px;
+	}
+
+	#codepen {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 4px;
+	}
+/*End Contact Window Section*/
 
 	/*Start Footer*/
 	#inputs {
-		padding: 20px 0 0 10px;
-		font-size: 12px;
+		padding: 10px 0 0 10px;
+		font-size: 1.7vw;
 	}
 	
 	#messageEnter {
@@ -931,24 +975,37 @@ span.historyBtn {
 	}
 
 	#contact {
-		font-size: 16px;
-		line-height: 1.3
+		font-size: 2.0vw;
+		line-height: 1.3;
+		padding: 10px;
 	}
 
 	#contact ul {
-		font-size: 14px;
+		font-size: 1.9vw;
 	}
 
 	#contact li {
 		font-size: .9em;
+		
 	}
 
-	#contactInfo ul {
-		font-size: 16px;
+	.contactInfo li {
+		display: inline-block;
+		margin: 0 8px 15px;
+		font-size: 1.9vw;
 	}
-
-	#contactInfo li {
-		font-size: 14px;
+	
+	#contactHr {
+		width: 90%;
+		height: 1px;
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0)); 
+		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+	}
+	
+	#copyright {
+		font-size: 1.8vw;
 	}
 	/*End Footer*/
 }
