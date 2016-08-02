@@ -527,11 +527,11 @@ span.historyBtn {
 }
 /*End Footer*/
 
-/************************Large Devices***********************/
+/************************Big Computers***********************/
 @media only screen and (min-width: 1200px){
 }
 
-/************************Medium Devices***********************/
+/************************Small Computers***********************/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	/*Start Header*/
 	#name { /*Navbar Name*/
@@ -561,8 +561,8 @@ span.historyBtn {
 	/*End Education Section*/
 }
 
-/************************Small Devices************************/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/************************Bigger Tablet************************/
+@media only screen and (min-width: 768px) and (max-width: 991px) {	
   /*Start Header*/
 	#name { /*Navbar Name*/
 		margin: 22px 0 20px 150px;
@@ -751,17 +751,24 @@ span.historyBtn {
 	/*End Footer*/
 }
 
-/*********************Extra Small Devices*********************/
-@media only screen and (min-width: 500px) and (max-width: 767px) {
+/*********************Tablet/Phablet*********************/
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+	body {
+		background-size: auto 100%;
+	}
+	
   /*Start Header*/
+	#topbar {
+		height: 55px;
+	}
 
 	#name { /*Navbar Name*/
-		margin: 22px 0 20px 40%;
+		margin: 20px 0 20px 38%;
 		font-size: 30px;
 	}
 	
 	#menu-toggle {
-		margin: 12px 15px 0 0;
+		margin: 10px 15px 0 0;
 	}
 	
 	.icon-bar {
@@ -780,6 +787,10 @@ span.historyBtn {
 		height: .5px;
 		border: .5px solid white;
 	}
+	
+	.navbar {
+		margin-bottom: 0 !important;
+	}
 
 	/*End Header*/
 
@@ -790,7 +801,7 @@ span.historyBtn {
 
 	#dan-img {
 		top: 60px;
-		left: 37%;
+		left: 35%;
 		border: 3px solid white;
 		width: 200px;
 		height: 200px;
@@ -998,6 +1009,322 @@ span.historyBtn {
 	#contactHr {
 		width: 90%;
 		height: 1px;
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0)); 
+		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+	}
+	
+	#copyright {
+		font-size: 1.8vw;
+	}
+	/*End Footer*/
+}
+
+/*********************SmartPhone*********************/
+@media only screen and (max-width: 549px) {
+	body {
+		background-size: auto 100%;
+	}
+	
+  /*Start Header*/
+	#topbar {
+		height: 55px;
+	}
+
+	#name { /*Navbar Name*/
+		margin: 20px 0 20px 30%;
+		font-size: 30px;
+	}
+	
+	#menu-toggle {
+		margin: 10px 15px 0 0;
+	}
+	
+	.icon-bar {
+		border: 1px solid white;
+	}
+	
+	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
+		height: 50px;
+		width: 100%;
+		font-size: 15px;
+		background-color: rgba(48,67,67,1);
+		padding-top: 15px;
+	}
+	
+	.divider {
+		height: .5px;
+		border: .5px solid white;
+	}
+	
+	.navbar-default { 
+		margin: 0 !important; 
+	}
+
+	/*End Header*/
+
+	/*Start Pic and Blurb*/
+	#top-content {
+		min-height: 390px;
+	}
+
+	#dan-img {
+		top: 30px;
+		left: 24%;
+		border: 3px solid white;
+		width: 200px;
+		height: 200px;
+	}
+
+	#topblurb > h2 {
+		position: absolute;
+		top: 85px;
+		left: 20%;
+		font-size: 50px;
+	}
+
+	#topblurb > p {
+		top: 263px;
+		left: 38%;
+		font-size: 42px;
+	}
+	/*End Profile Pic and Blurb*/
+
+	/*Start About Section*/
+	.title {
+		font-size: 25px;
+	}
+
+	/*Start At A Glance Section*/
+	#atAGlance {
+		min-height: 250px;
+	}
+
+	#aagContent {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+
+	#leftQuote {
+		top: -8px;	
+		left: 15px;
+		font-size: 65px;
+	}
+
+	#skillist {
+		background: url(../images/Skills.png) center no-repeat;
+		background-size: contain;
+		margin: 0 0 0 20px;
+		width: 100%;
+		height: auto;
+	}
+	/*End At A Glance Section*/
+
+
+	/*Start Portfolio Section*/
+	#port-title {
+		margin-top: 10px;
+		padding-right: 0;
+	}
+	
+	#port-hr {
+		width: 180px;
+		margin-right: 0;
+	}
+	
+	#port-coverflow {
+		width: auto;
+		margin: 0 0 0 15px;
+		padding: 0;
+	}
+
+	#port-blurb {
+		padding: 20px 0 15px 30px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.3;
+	}
+	/*End Portfolio Section*/
+
+
+	/*Start Work History Section*/
+	#workHistory {
+		height: 260px;
+	}
+	
+	#wrkhis-title {
+		margin-top: 10px;
+	}
+
+	#work-hr {
+		width: 250px;
+	}
+
+	#workDates {
+		margin: 5px 0 7px;
+		font-size: 8px;
+	}
+
+	#wrkhis-content {
+		margin-top: -5px;
+		font-size: 10px;
+		line-height: 1.2;
+	}
+
+	#wrkhis-pic {
+		top: 65px;
+		right: 0px;
+		width: 90px;
+		height: 90px;
+	}
+
+	span.historyBtn {
+		margin: 0px 8px;
+		font-size: 10px;
+	}
+	/*End Work History Section*/
+
+
+	/*Start Education Section*/
+	#education {
+		margin-top: -5px;
+		min-height: 500px;
+	}
+	
+	#ed-title {
+		margin-right: 0;
+		padding: 0;
+	}
+	
+	#ed-hr {
+		width: 190px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	#ed-content {
+		margin: 0;
+	}
+
+	.school {
+		margin: 0;
+		font-size: 16px;
+	}
+
+	.schoolLogo {
+		width: 90px;
+		height: 90px;
+		margin-bottom: 10px;
+	}
+
+	.classInfo {
+		margin: 0 -50px 0 15px;
+		font-size: 9px;
+		max-width: 375px;
+	}
+	
+	.schoolHr {
+		margin: 10px;
+	}
+	/*End Education Section*/
+	/*End About Section*/
+	
+	/*Start Contact Window Section*/
+	#contactWindow {
+		min-height: 120px;
+	}
+
+	#contact-buttons {
+		margin-top: 43px;
+		margin-left: 15px;
+	}
+
+	.buttons #e-mail {
+		width: 35px;
+		height: 35px;
+		padding-top: 3px;
+	}
+
+	.buttons #facebook {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 11px;
+		padding-left: 6px;
+	}
+
+	.buttons #linkedin {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 4px;
+	}
+
+	#github {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 4px;
+	}
+
+	#codepen {
+		width: 35px;
+		height: 35px;
+		margin-left: 10px;
+		padding-top: 4px;
+	}
+	/*End Contact Window Section*/
+
+	/*Start Footer*/
+	#inputs {
+		padding: 10px 0 0 10px;
+		font-size: 9px;
+	}
+	
+	#messageEnter {
+		height: 70px
+	}
+
+	#contact {
+		font-size: 10px;
+		line-height: 1.3;
+		margin-right: 0;
+		padding: 0px;
+	}
+
+	#contact ul {
+		font-size: 9px;
+	}
+
+	#contact li {
+		font-size: 9px;
+		
+	}
+
+	.contactInfo {
+		margin: 0 0 10px 0;
+		padding: 0;
+	}
+	
+	.contactInfo li {
+		display: inline-block;
+		list-style-type: none;
+		margin: 0 10px;
+		font-size: 11px;
+		padding: 0;
+	}
+	
+	.contactInfo a li {
+		text-decoration: underline;
+		color: lightblue;
+	}
+	
+	#contactHr {
+		width: 90%;
+		height: 1px;
+		margin-right: 0;
+		padding-right: 0;
 		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0)); 
 		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
