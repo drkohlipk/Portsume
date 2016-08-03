@@ -45,6 +45,24 @@ $(function() {
 			}
 		});
 	});
+	/**
+ * Listen to scroll to change header opacity class
+ */
+	function checkScroll(){
+			var startY = $('#topbar').height(); //The point where the navbar changes in px
+
+			if($(window).scrollTop() > startY){
+					$('#topbar').addClass("scrolled");
+			}else{
+					$('#topbar').removeClass("scrolled");
+			}
+	}
+
+	if($('#topbar').length > 0){
+			$(window).on("scroll load resize", function(){
+					checkScroll();
+			});
+	}
 	rando();
 	changeDescriptor();
 	$('#descriptor').text(descriptions[randoNumber]);

@@ -114,6 +114,8 @@
             // If not false, Flipster will build an unordered list of the items
             // Values true or 'before' will insert the navigation before the items, 'after' will append the navigation after the items
 
+						blurby: true,
+					
             buttons: true,
             // [true|false|'custom']
             // If true, Flipster will insert Previous / Next buttons with SVG arrows
@@ -301,6 +303,20 @@
 
                 }
             }
+					
+						function updateBlurb() {
+                if ( settings.blurby ) {
+									
+										var blurbTitle = _currentItem.data('flip-title')
+
+                    var blurbText = _currentItem.data('flip-blurb');
+									
+										$('#portPreview').text(blurbTitle)
+
+                    $('.portWords').text(blurbText);
+
+                }
+            }
 
             function noTransition() {
                 self.css('transition', 'none');
@@ -403,6 +419,7 @@
                 }
 
                 updateNav();
+								updateBlurb();
             }
 
             function jump(to) {
