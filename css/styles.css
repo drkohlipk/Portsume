@@ -278,6 +278,7 @@ body {
 span.historyBtn {
 	margin: 0px 70px;
 	font-size: 20px;
+	color: steelblue;
 	transition: all .2s;
 }
 
@@ -511,8 +512,8 @@ span.historyBtn {
   margin-top: 10px;
 }
 
-#contactInfo {
-	margin: 20px 0 0 0;
+.contactInfo {
+	margin: 15px 0 0 0;
 }
 
 .contactInfo ul {
@@ -1024,7 +1025,8 @@ span.historyBtn {
 /*********************SmartPhone*********************/
 @media only screen and (max-width: 549px) {
 	body {
-		background-size: auto 100%;
+		background-size: auto;
+		background-position: top center;
 	}
 	
   /*Start Header*/
