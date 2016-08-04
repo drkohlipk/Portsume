@@ -598,7 +598,7 @@ span.historyBtn {
 		padding-top: 60px;
 	}
 	#name { /*Navbar Name*/
-		margin: 22px 0 20px 110px;
+		margin: 22px 0 20px 120px;
 		font-size: 30px;
 	}
 	.navbar-header {
@@ -853,7 +853,7 @@ span.historyBtn {
 	}
 
 	#name { /*Navbar Name*/
-		margin: 20px 0 20px 38%;
+		margin: 20px 0 20px 35%;
 		font-size: 30px;
 	}
 	
@@ -1129,8 +1129,8 @@ span.historyBtn {
 	}
 
 	#name { /*Navbar Name*/
-		margin: 20px 0 20px 30%;
-		font-size: 30px;
+		margin: 20px 0 20px 25%;
+		font-size: 7.0vw;
 	}
 	
 	#menu-toggle {
