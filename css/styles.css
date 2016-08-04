@@ -556,11 +556,11 @@ span.historyBtn {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	/*Start Header*/
 	body {
-	background: url("../images/mdBackground.jpg") no-repeat center;
-  background-attachment: fixed;
-	background-size: cover;
-	padding-top: 60px;
-}
+		background: url("../images/mdBackground.jpg") no-repeat center;
+		background-attachment: fixed;
+		background-size: cover;
+		padding-top: 60px;
+	}
 	#name { /*Navbar Name*/
 		margin: 20px 0 20px 15px;
 	}
@@ -591,20 +591,77 @@ span.historyBtn {
 /************************Bigger Tablet************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {	
   /*Start Header*/
+	body {
+		background: url("../images/mdBackground.jpg") no-repeat center;
+		background-attachment: fixed;
+		background-size: cover;
+		padding-top: 60px;
+	}
 	#name { /*Navbar Name*/
-		margin: 22px 0 20px 150px;
+		margin: 22px 0 20px 110px;
 		font-size: 30px;
+	}
+	.navbar-header {
+		float: none;
+	}
+	.navbar-left,.navbar-right {
+		float: none !important;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav {
+		float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 15px;
+		height: 50px;
+		width: 100%;
+	}
+	.collapse.in{
+		display:block !important;
+	}
+	#menu-toggle {
+		margin: 12px 10px 0 0;
+	}
+	
+	.icon-bar {
+		border: 1px solid white;
 	}
 	
 	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
-		height: 60px;
-		width: 70px;
-		padding: 20px 0px;
+		height: 50px;
+		width: 100%;
 		font-size: 15px;
+		background-color: rgba(54, 77, 127, .8);
+		padding-top: 15px;
 	}
 
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Link Hover*/
 		border-bottom: 3px solid white;
+	}
+	
+	
+	.divider {
+		height: .5px;
+		border: .5px solid white;
 	}
 	/*End Header*/
 
@@ -781,9 +838,15 @@ span.historyBtn {
 /*********************Tablet/Phablet*********************/
 @media only screen and (min-width: 550px) and (max-width: 767px) {
 	body {
-		background-size: auto 100%;
+		background: url("../images/xsBackground.jpg") no-repeat;
+		background-position: left top;
+		background-attachment: scroll;
+		background-size: 767px 1000px;
+		width: 100%;
+		height: auto;
+		padding-top: 60px;
 	}
-	
+
   /*Start Header*/
 	#topbar {
 		height: 55px;
@@ -806,7 +869,7 @@ span.historyBtn {
 		height: 50px;
 		width: 100%;
 		font-size: 15px;
-		background-color: rgba(48,67,67,1);
+		background-color: rgba(54, 77, 127, .8);
 		padding-top: 15px;
 	}
 	
@@ -1051,11 +1114,14 @@ span.historyBtn {
 /*********************SmartPhone*********************/
 @media only screen and (max-width: 549px) {
 	body {
-	background: url("../images/xsBackground.jpg") no-repeat center;
-  background-attachment: fixed;
-	background-size: cover;
-	padding-top: 60px;
-}
+		background: url("../images/xsBackground.jpg") no-repeat;
+		background-position: left top;
+		background-attachment: scroll;
+		background-size: 550px 800px;
+		width: 100%;
+		height: auto;
+		padding-top: 60px;
+	}
 	
   /*Start Header*/
 	#topbar {
@@ -1079,7 +1145,7 @@ span.historyBtn {
 		height: 50px;
 		width: 100%;
 		font-size: 15px;
-		background-color: rgba(48,67,67,1);
+		background-color: rgba(54, 77, 127, .8);
 		padding-top: 15px;
 	}
 	

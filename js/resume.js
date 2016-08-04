@@ -63,6 +63,13 @@ $(function() {
 					checkScroll();
 			});
 	}
+	if (document.documentElement.clientWidth < 767) {
+		$(window).scroll(function() {
+			var scrolledY = $(window).scrollTop();
+			$('body').css('background-position', 'left ' + ((scrolledY)) + 'px');
+		});
+	}
+	
 	rando();
 	changeDescriptor();
 	$('#descriptor').text(descriptions[randoNumber]);
