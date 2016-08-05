@@ -84,23 +84,23 @@
 					<div class="col-xs-12 text-uppercase text-right title" id="port-title">PORTFOLIO
 					</div>
 					<hr class="title-hr" id="port-hr">
-					<article class="col-sm-7 col-xs-12" id="port-coverflow">
+					<article class="col-md-7 col-xs-12" id="port-coverflow">
 						<div id="coverflow">
 							<ul class="flip-items">
 								<li data-flip-title="PJ's Weather App" data-flip-blurb="This was an assignment for freeCodeCamp.com's Front End Developer syllabus.  It geolocates the user and provides an up-to-date weather reading for the user's area in a simple little output.  Check it out by clicking on the image!">
-									<a href="http://codepen.io/drkohli/full/bZYWax/" target="_blank"><img src="images/PJs%20WX%20App.png"></a>
+									<a href="http://codepen.io/drkohli/full/bZYWax/" target="_blank"><img src="images/PJsWXApp.png" id="wx"></a>
 								</li>
 								<li data-flip-title="PJ's Wicked Wiki-gen" data-flip-blurb="This was an assignment for freeCodeCamp.com's Front End Developer syllabus.  This web application will take a user entered value and generate a window with Wikipedia entries that contain the selected keyword.  Once the entries are generated, you can click on any of them and it will take you to the respective Wikipedia page.  A button to take you to a random Wikipedia article is also present.  Check it out by clicking on the image!">
-									<a href="http://codepen.io/drkohli/full/zBPLLE/" target="_blank"><img src="images/WickedWiki.png"></a>
+									<a href="http://codepen.io/drkohli/full/zBPLLE/" target="_blank"><img src="images/WickedWiki.png" id="wiki"></a>
 								 </li>
-								<li data-flip-title="PJ's Twitch.TV Viewport" data-flip-blurb="This was an assignment for freeCodeCamp.com's Front End Developer syllabus.  In this web application, Twitch.TV user information is pulled from the website as to whether or not they are online and what they are streaming.  If you click on the user, it will take you to their stream.  You are also able to search for a username using the search field on the page.  Check it out by clicking on the image!">
-										<a href="http://codepen.io/drkohli/full/grvXdB/" target="_blank"><img src="images/PJsTwitchTVPorthole.png"></a>
+								<li data-flip-title="PJ's Twitch.TV Viewport" data-flip-blurb="This was an assignment for freeCodeCamp.com's Front End Developer syllabus.  In this web application, Twitch.TV user information is pulled from the website as to whether or not they are online and what they are.  If you click on the user, it will take you to their stream.  You are also able to search for a username using the search field on the page.  Check it out by clicking on the image!">
+										<a href="http://codepen.io/drkohli/full/grvXdB/" target="_blank"><img src="images/PJsTwitchTVPorthole.png" id="twitch"></a>
 								</li>
 								<li data-flip-title="C.H.A.N.C.E. Costa Rica 2006" data-flip-blurb="This website was created for the professor that I was a teaching assistant for in college.  It outlines the C.H.A.N.C.E. study abroad program in which the students study the biodiversity in different regions of Costa Rica.  It was on this trip that I met my wife!  Check it out by clicking on the image!">
-									<a href="http://www2.lv.psu.edu/jxm57/explore/costarica2006/index.html" target="_blank"><img src="images/costaRica.png"></a>
+									<a href="http://www2.lv.psu.edu/jxm57/explore/costarica2006/index.html" target="_blank"><img src="images/costaRica.png" id="cr"></a>
 								</li>
 								<li data-flip-title="C.H.A.N.C.E. Peru 2005" data-flip-blurb="This website was created for the professor that I was a teaching assistant for in college.  It outlines the C.H.A.N.C.E. study abroad program in which the students study the biodiversity in different regions of Peru.  This was my first introduction to the Adobe Suite and HTML.  Check it out by clicking on the image!">
-									<a href="http://www2.lv.psu.edu/jxm57/explore/peru/index.html" target="_blank"><img src="images/peru.png"></a>
+									<a href="http://www2.lv.psu.edu/jxm57/explore/peru/index.html" target="_blank"><img src="images/peru.png" id="peru"></a>
 								</li>
 							</ul>
 						</div>
@@ -108,10 +108,9 @@
 								var coverflow = $("#coverflow").flipster();
 						</script>
 					</article>
-					<div class="col-sm-5 col-xs-12" id="port-blurb">
+					<div class="col-md-5 col-xs-12" id="port-blurb">
 						<h3 id="portPreview"></h3>
-						<p class="hidden-xs text-left portWords"></p>
-						<p class="visible-xs text-left portWords"></p>
+						<p class="text-left" id="portWords"></p>
 					</div>
 				</div>
 			</div>
@@ -124,20 +123,24 @@
 						<hr class="title-hr" id="work-hr">
 						<div class="col-xs-12 text-left" id="workDates">Dates: October 2011 to Present</div>
 						<div class="col-xs-8 text-left" id="wrkhis-content">
-							<p>On the forefront of Marine Corps aviation, the F/A-18 provides our troops on the ground the support that they need when they need it.  The F/A stands for fighter-attack so the F/A-18 is also capable of air-to-air mission sets in which the aircrew are engaged in the fast paced chess match that is Beyond Visual Range combat to the "fangs-out" warfare known as dog fighting.  We are a select few, but we work hard and we only accept perfection.</p>
+							<p id="p1">On the forefront of Marine Corps aviation, the F/A-18 provides our troops on the ground the support that they need when they need it.  The F/A stands for fighter-attack so the F/A-18 is also capable of air-to-air mission sets in which the aircrew are engaged in the fast paced chess match that is Beyond Visual Range combat to the "fangs-out" warfare known as dog fighting.  We are a select few, but we work hard and we only accept perfection.</p>
+							<p id="readMore">To read more about the duties and responsibities of this position, click <span id="wrkExpd">here</span></p>
 						</div>
 						<div class="col-xs-4" id="wrkhis-pic">
 						</div>
 					</div>
 					<div class="col-xs-12 text-center" id="wrkhis-buttons">
-						<span class="historyBtn" id="ftrPilot">Fighter Pilot</span>
-						<span class="historyBtn" id="officer">Marine Corps Officer</span>
-						<span class="historyBtn" id="ta">Teaching Assistant/Web Developer</span>
+						<span class="historyBtn" id="ftrPilot"><img src="images/hornet.png" class="hornet" id="wrkHrnt"><span>Fighter Pilot</span></span>
+						<span class="historyBtn" id="officer"><span>Marine Corps Officer</span></span>
+						<span class="historyBtn" id="ta"><span>Teaching Assistant/Web Developer</span></span>
 					</div>
 				</div>
 			</section>
+			<div class="col-xs-12 hidden" id="doodyWindow">
+					
+			</div>
 			<hr class="sep">
-			<div class="container">
+			<div class="container" id="ed-cont">
 				<div class="row abtsxn" id=education>
 					<div class="col-xs-12 text-right text-uppercase title" id="ed-title">EDUCATION
 					</div>
@@ -249,8 +252,8 @@
 						</form>
 					</div>
         	<div class="col-md-4 col-xs-6" id="contact">
-        	Feel free to contact me at any point in time regarding whatever you feel like talking about!
-          	<ul>Topics include but are not limited to the following:
+        	Feel free to contact me at any point in time regarding whatever you feel like talking about!<br><span>Topics include but are not limited to the following:</span>
+          	<ul>
           		<li>Potential job opportunities</li>
           		<li>What it's like to fly a fighter jet</li>
           		<li>The cosmos and the meaning of life</li>

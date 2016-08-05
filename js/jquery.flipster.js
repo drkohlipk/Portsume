@@ -313,7 +313,7 @@
 									
 										$('#portPreview').text(blurbTitle)
 
-                    $('.portWords').text(blurbText);
+                    $('#portWords').text(blurbText);
 
                 }
             }
