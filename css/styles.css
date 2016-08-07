@@ -12,7 +12,7 @@ a:focus, a:visited {
 }
 
 body {
-	background: url("../images/lgAltBackground.jpg") no-repeat center;
+	background: url("../images/bgLarge.jpg") no-repeat center;
   background-attachment: fixed;
 	background-size: cover;
 	padding-top: 60px;
@@ -31,6 +31,7 @@ body {
 	background-color: white;
 }
 
+
 /*Start Header*/
 #topbar { /*Top Navbar*/
   background: rgba(54,77,127,0);
@@ -47,7 +48,7 @@ body {
   width: 137px;
   height: 55px;
   background: url('../images/PJLogo2Nav.png') no-repeat;
-  margin: 5px 0 0 0;
+  margin: 0;
 }
 
 #name { /*Navbar Name*/
@@ -79,9 +80,10 @@ body {
 }
 
 #topbar.scrolled {
-    background: rgba(54, 77, 127, .8);
+    background-color: rgba(0, 86, 145, .8);
 }
 /*End Header*/
+
 
 /*Start Pic and Blurb*/
 #top-content {
@@ -129,6 +131,7 @@ body {
 	line-height: 1;
 }
 /*End Profile Pic and Blurb*/
+
 
 /*Start About Section*/
 .sep {
@@ -250,7 +253,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 500px;
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.73);
 	background-size: contain;
 }
 
@@ -317,19 +320,34 @@ span.historyBtn {
 
 span.historyBtn span {
 	font-size: 20px;
-	color: steelblue;
+	color: darkblue;
 	transition: all .2s;
-	border-bottom: 1px solid steelblue;
+	border-bottom: 1px solid darkblue;
 }
 
-.historyBtn:hover, .historyBtn:focus {
+.historyBtn:hover {
 	text-shadow: 1px 1px 5px slateblue;
 	cursor: pointer;
 }
 
 #doodyWindow {
-	min-height: 400px;
-	transition: all 1s;
+	min-height: 200px;
+	padding: 50px 20%;
+	font-size: 18px;
+	font-family: 'Lato'; 
+	transition: all .5s;
+}
+
+#doodyWindow p {
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+#wrkCls {
+	color: darkblue;
+	text-decoration: underline;
+	text-decoration-color: darkblue;
+	cursor: pointer;
 }
 /*End Work History Section*/
 
@@ -521,11 +539,12 @@ span.historyBtn span {
 /*End Contact Window Section*/
 /*End About Section*/
 
+
 /*Start Footer*/
 #footer {
   height: auto;
 	border: none;
-  background-color: rgba(54,77,127,.7);
+  background-color: rgba(0, 86, 145, .8);
   margin: 0;
   color: white;
   font-family: 'Lato', sans-serif;
@@ -596,15 +615,27 @@ span.historyBtn span {
 	}
 /*End Footer*/
 
+
+
+
+
+
+
 /************************Big Computers***********************/
 @media only screen and (min-width: 1200px){
 }
+
+
+
+
+
+
 
 /************************Small Computers***********************/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	/*Start Header*/
 	body {
-		background: url("../images/mdBackground.jpg") no-repeat center;
+		background: url("../images/bgMedium.jpg") no-repeat center;
 		background-attachment: fixed;
 		background-size: cover;
 		padding-top: 60px;
@@ -614,6 +645,7 @@ span.historyBtn span {
 	}
 	/*End Header*/
 
+	
 	/*Start About Section*/
 	/*Start At A Glance Section*/
 	#skillist {
@@ -621,11 +653,13 @@ span.historyBtn span {
 	}
 	/*End At A Glance Section*/
 	
+	
 	/*Start Portfolio Section*/
 	#port-blurb {
 		padding: 10px 0 0 30px;
 	}
 	/*End Portfolio Section*/
+	
 	
 	/*Start Work History Section*/
 	span.historyBtn {
@@ -641,11 +675,16 @@ span.historyBtn span {
 	/*End Education Section*/
 }
 
+
+
+
+
+
 /************************Bigger Tablet************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {	
   /*Start Header*/
 	body {
-		background: url("../images/mdBackground.jpg") no-repeat center;
+		background: url("../images/bgMedium.jpg") no-repeat center;
 		background-attachment: fixed;
 		background-size: cover;
 		padding-top: 60px;
@@ -713,9 +752,9 @@ span.historyBtn span {
 	
 	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
 		height: 50px;
-		width: 100%;
+		width: 98%;
 		font-size: 15px;
-		background-color: rgba(54, 77, 127, .8);
+		background-color: rgba(0, 86, 145, 1);
 		padding-top: 15px;
 	}
 
@@ -726,6 +765,11 @@ span.historyBtn span {
 	.divider {
 		height: .5px;
 		border: .5px solid white;
+		width: 98%;
+	}
+	
+	#topbar.scrolled {
+		background-color: rgba(0, 86, 145, 1);
 	}
 	/*End Header*/
 
@@ -869,6 +913,10 @@ span.historyBtn span {
 
 	
 	/*Start Footer*/
+	#footer {
+		background-color: rgba(0, 86, 145, 1);
+	}
+	
 	#inputs {
 		padding: 10px 0 0 10px;
 		font-size: 12px;
@@ -907,13 +955,28 @@ span.historyBtn span {
 		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 	}
+	
+	#contactHr:after {
+		content: url(../images/hornetWt.png);
+		display: inline-block;
+		position: relative;
+		top: -17px;
+		padding: 0 0 0 5px;
+		background: rgba(0, 86, 145, 1);
+	}
 	/*End Footer*/
 }
+
+
+
+
+
+
 
 /*********************Tablet/Phablet*********************/
 @media only screen and (min-width: 550px) and (max-width: 767px) {
 	body {
-		background: url("../images/xsBackground.jpg") no-repeat;
+		background: url("../images/bgXS.jpg") no-repeat;
 		background-position: left top;
 		background-attachment: scroll;
 		background-size: 767px 1000px;
@@ -922,10 +985,15 @@ span.historyBtn span {
 		padding-top: 60px;
 	}
 
+	
   /*Start Header*/
 	#topbar {
 		height: 55px;
 	}
+	
+	#topbar.scrolled {
+    background-color: rgba(0, 86, 145, 1);
+}
 
 	#name { /*Navbar Name*/
 		margin: 20px 0 20px 35%;
@@ -944,7 +1012,7 @@ span.historyBtn span {
 		height: 50px;
 		width: 100%;
 		font-size: 15px;
-		background-color: rgba(54, 77, 127, .8);
+		background-color: rgba(0, 86, 145, 1);
 		padding-top: 15px;
 	}
 	
@@ -956,7 +1024,6 @@ span.historyBtn span {
 	.navbar {
 		margin-bottom: 0 !important;
 	}
-
 	/*End Header*/
 
 	
@@ -1153,6 +1220,10 @@ span.historyBtn span {
 
 	
 	/*Start Footer*/
+	#footer {
+		background-color: rgba(0, 86, 145, 1);
+	}
+	
 	#inputs {
 		padding: 10px 0 0 10px;
 		font-size: 1.7vw;
@@ -1168,13 +1239,12 @@ span.historyBtn span {
 		padding: 10px;
 	}
 
-	#contact ul {
+	#contact span {
 		font-size: 1.9vw;
 	}
 
 	#contact li {
 		font-size: .9em;
-		
 	}
 
 	.contactInfo li {
@@ -1192,16 +1262,31 @@ span.historyBtn span {
 		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 	}
 	
+	#contactHr:after {
+		content: url(../images/hornetWt.png);
+		display: inline-block;
+		position: relative;
+		top: -17px;
+		padding: 0 0 0 5px;
+		background-color: rgba(0, 86, 145, 1);
+	}
+	
 	#copyright {
 		font-size: 1.8vw;
 	}
 	/*End Footer*/
 }
 
+
+
+
+
+
+
 /*********************SmartPhone*********************/
 @media only screen and (max-width: 549px) {
 	body {
-		background: url("../images/xsBackground.jpg") no-repeat;
+		background: url("../images/bgXS.jpg") no-repeat;
 		background-position: left top;
 		background-attachment: scroll;
 		background-size: 550px 800px;
@@ -1232,7 +1317,7 @@ span.historyBtn span {
 		height: 50px;
 		width: 100%;
 		font-size: 15px;
-		background-color: rgba(54, 77, 127, .8);
+		background-color: rgba(0, 86, 145, 1);
 		padding-top: 15px;
 	}
 	
@@ -1243,6 +1328,10 @@ span.historyBtn span {
 	
 	.navbar-default { 
 		margin: 0 !important; 
+	}
+	
+	#topbar.scrolled {
+    background-color: rgba(0, 86, 145, 1);
 	}
 	/*End Header*/
 
@@ -1496,6 +1585,10 @@ span.historyBtn span {
 
 	
 	/*Start Footer*/
+	#footer {
+		background-color: rgba(0, 86, 145, 1);
+	}
+	
 	#footer .container {
 		padding: 0;
 	}
@@ -1557,6 +1650,15 @@ span.historyBtn span {
 		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
+	}
+	
+	#contactHr:after {
+		content: url(../images/hornetSmallWt.png);
+		display: inline-block;
+		position: relative;
+		top: -9px;
+		padding: 0 0 0 1px;
+		background-color: rgba(0, 86, 145, 1);
 	}
 	
 	#copyright {
