@@ -325,7 +325,7 @@ span.historyBtn span { /*Work history buttons without hornet*/
 }
 
 .historyBtn:hover { /*Hover effect for work history buttons*/
-	text-shadow: 1px 1px 15px rgba(0, 86, 145, 1);
+	text-shadow: .5px .5px 5px rgba(0, 86, 145, 1);
 	cursor: pointer;
 }
 
