@@ -223,7 +223,9 @@ $(function() { //on page load...
 		
 		$(window).on('load resize', function() { //anytime the page is loaded or resized...
 			
-			$('#dan-img').css('left', winWidth * .0555 + '%'); //re-center the pic of me!
+			$('#dan-img').css('left', winWidth * .0568 + '%'); //re-center the pic of me!
+			
+			$('#name').css("margin-left", winWidth * .050 +"%"); //re-center my name!
 
 		}); //on scroll load resize function
 		
@@ -240,20 +242,6 @@ $(function() { //on page load...
 			$('#cr').attr('src', 'images/costaRicaSmall.png'); //change the costa rica website thumbnail to the smaller one in portfolio
 			
 			$('#peru').attr('src', 'images/peruSmall.png'); //change the peru website thumbnail thumbnail to the smaller one in portfolio
-			
-			
-			
-			/*if (document.documentElement.clientWidth < 400) { //if the window is less than 400px...
-				
-				$('#dan-img').css('left', '21%'); //re-center the pic of me!
-				
-				if (document.documentElement.clientWidth < 350) { //if the window is less than 350px...
-					
-					$('#dan-img').css('left', '16%'); //re-center the pic of me again!
-					
-				} //if 350px bracket
-				
-			} //if 400px bracket*/
 			
 		}	//if 550px bracket
 		
