@@ -254,6 +254,262 @@
 					<hr class="text-center visible-sm visible-xs" id="contactHr">
 					<div class="col-md-4 col-xs-6" id="inputs">
 						<form action="https://formspree.io/drkohlipk@gmail.com" method="POST">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A collaboration of PJ's work and life experiences">
+		<meta name="keywords" content="portsume, software engineer, JavaScript, HTML, CSS, Adobe CC, web developer, software developer, Daniel Kohli, resume, portfolio, UX design, user experience, creative, PJ">
+		<meta name="author" content="Daniel Kohli">
+    <title>PJ's Portsume</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+		<link href="css/pjquery.flipster.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarala|Taviraj" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>		
+		<script src="js/pjquery.flipster.min.js"></script>
+		<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script src="js/resume.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top" id="topbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand hidden-xs" id="logo">
+            </div>
+						<h1 class="text-center" id="name">Daniel 'PJ' Kohli</h1>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" id="menu-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!--navbar-header-->
+          <div class="collapse navbar-collapse text-center" id="navbar-collapse-1">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#top">Top<span class="sr-only">(current)</span></a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+							<li role="separator" class="divider"></li>
+              <li>
+                <a href="#workHistory">Resume</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div><!--navbar-collapse-1-->
+        </div><!--navbar container-->
+      </nav><!--topbar-->
+    </header><!--end header-->
+    <div class="container-fluid" id="top-content">
+			<div class="container">
+				<div class="col-md-6 col-sm-12 col-xs-12" id="left-topimg">
+						<img src="images/Profilepic.jpg" id="dan-img" alt="Profile pic"/>
+				</div><!--left-topimg-->			
+				<div class="col-md-6 col-sm-12 col-xs-12" id="topblurb"><h2>I am</h2>
+					<p id="descriptor"></p>
+				</div><!--topblurb-->
+			</div><!--top-content container-->
+    </div><!--top-content container-fluid--->
+    <div class="container-fluid" id="mainContent">
+			<hr class="sep">
+			<div class="container" id="atAGlance">
+				<div class="row abtsxn">
+					<div class="col-xs-12 text-left content" id="aagContent">
+						<p>Hi, I'm Daniel &quot;PJ&quot; Kohli, welcome to my &#39;portsume&#39; &#40;portfolio &#43; resume&#41;!  I'm currently a Marine Corps Naval Aviator who is making the transition to the civilian world.  With a knack for technology, a passion for learning, and a keen eye for detail, I'm climbing my way into the technology sector to be a software engineer.  Feel free to look around and if you have any questions or would like to assist in my quest in any way, please send me an e-mail or message using the form at the bottom of the page!</p>
+						<p>~~PJ</p>
+					</div><!--aagContent col-->
+					<div class="col-xs-12" id="skillist">
+					</div><!--skillist graphic-->
+				</div><!--abtsxn row-->
+			</div><!--AAG container-->
+			<hr class="sep" id="portSep">
+			<div class="container">
+				<div class="row abtsxn" id="portfolio">
+					<div class="col-xs-12 text-uppercase text-right title" id="port-title">PORTFOLIO
+					</div><!--port-title-->
+					<hr class="title-hr" id="port-hr">
+					<article class="col-md-7 col-xs-12" id="port-coverflow">
+						<div id="coverflow">
+							<ul class="flip-items">
+								<li data-flip-title="PJ's Weather App" data-flip-blurb="This was an assignment for freeCodeCamp.com's Front End Developer syllabus.  It geolocates the user and provides an up-to-date weather reading for the user's area in a simple little output.  Check it out by clicking on the image!">
+									<a href="http://codepen.io/drkohli/full/bZYWax/" target="_blank"><img src="images/PJsWXApp.png" id="wx"></a>
+								</li>
+								<li data-flip-title="PJ's Wicked Wiki-gen" data-flip-blurb="This was an assignment for freeCodeCamp.com's Front End Developer syllabus.  This web application will take a user entered value and generate a window with Wikipedia entries that contain the selected keyword.  Once the entries are generated, you can click on any of them and it will take you to the respective Wikipedia page.  A button to take you to a random Wikipedia article is also present.  Check it out by clicking on the image!">
+									<a href="http://codepen.io/drkohli/full/zBPLLE/" target="_blank"><img src="images/WickedWiki.png" id="wiki"></a>
+								 </li>
+								<li data-flip-title="PJ's Twitch.TV Viewport" data-flip-blurb="This was an assignment for freeCodeCamp.com's Front End Developer syllabus.  In this web application, Twitch.TV user information is pulled from the website as to whether or not they are online and what they are streaming.  If you click on the user, it will take you to their stream.  You are also able to search for a username using the search field on the page.  Check it out by clicking on the image!">
+										<a href="http://codepen.io/drkohli/full/grvXdB/" target="_blank"><img src="images/PJsTwitchTVPorthole.png" id="twitch"></a>
+								</li>
+								<li data-flip-title="C.H.A.N.C.E. Costa Rica 2006" data-flip-blurb="I created this website while in college for the professor for whom I was a teaching assistant.  It outlines the C.H.A.N.C.E. study abroad program in which the students study the biodiversity in different regions of Costa Rica.  It was on this trip that I met my wife!  Check it out by clicking on the image!">
+									<a href="http://www2.lv.psu.edu/jxm57/explore/costarica2006/index.html" target="_blank"><img src="images/costaRica.png" id="cr"></a>
+								</li>
+								<li data-flip-title="C.H.A.N.C.E. Peru 2005" data-flip-blurb="I created this website while in college for the professor for whom I was a teaching assistant.  It outlines the C.H.A.N.C.E. study abroad program in which the students study the biodiversity in different regions of Peru.  This was my first introduction to the Adobe Suite and HTML.  Check it out by clicking on the image!">
+									<a href="http://www2.lv.psu.edu/jxm57/explore/peru/index.html" target="_blank"><img src="images/peru.png" id="peru"></a>
+								</li>
+							</ul>
+						</div><!--coverflow-->
+						<script>
+								var coverflow = $("#coverflow").flipster();
+						</script><!--coverflow script-->
+					</article><!--port-coverflow col-->
+					<div class="col-md-5 col-xs-12" id="port-blurb">
+						<h3 id="portPreview"></h3>
+						<p class="text-left" id="portWords"></p>
+					</div><!--port-blurb-->
+				</div><!--portfolio row-->
+			</div><!--portfolio container-->
+			<section id="workHistory">
+				<div id="workOvrly"></div>
+				<div class="container">
+					<div class="row abtsxn">
+						<div class="col-xs-12 text-left text-uppercase title" id="wrkhis-title">WORK HISTORY
+						</div><!--wrkhis-title-->
+						<hr class="title-hr" id="work-hr">
+						<div class="col-xs-12 text-left" id="workDates">Dates: October 2011 to Present</div>
+						<div class="col-sm-8 col-xs-9 text-left" id="wrkhis-content">
+							<p id="p1">On the forefront of Marine Corps aviation, the F/A-18 provides our troops on the ground the support that they need when they need it.  The F/A stands for fighter-attack so the F/A-18 is also capable of air-to-air mission sets in which the aircrew are engaged in the fast paced chess match that is beyond visual range combat to the "fangs-out" warfare known as dog fighting.  We are a select few, but we work hard and we only accept perfection.</p>
+							<p id="readMore">To read more about my duties and accomplishments while in this position, click <span id="wrkExpd">here</span>.</p>
+						</div><!--wrkhis-content-->
+						<div class="col-sm-4 col-xs-3" id="wrkhis-pic">
+						</div><!--wrkhis-pic-->
+					</div><!--wrkhis row-->
+					<div class="col-xs-12 text-center" id="wrkhis-buttons">
+						<span class="historyBtn" id="ftrPilot"><img src="images/hornet.png" class="hornet" id="wrkHrnt"><span>Fighter Pilot</span></span>
+						<span class="historyBtn" id="officer"><span>Marine Corps Officer</span></span>
+						<span class="historyBtn" id="ta"><span>Teaching Assistant/Web Developer</span></span>
+					</div><!--wrkhis-buttons-->
+				</div><!--wrkhis container-->
+			</section><!--workHistory section-->
+			<div class="col-xs-12 hidden" id="doodyWindow">
+				<ul id="doodyContent">
+					<li>Facilitate over 100 mission briefs/debriefs and aviation lessons learned annually.</li>
+					<li>Study the aircraft and weapons systems and tactics of both friendly and enemy nations to adapt to the combat situation at hand and be more lethal than the opponent.</li>
+					<li>Appointed as the subject matter expert for Surface-to-Air Counter Tactics, F/A-18 Combat Systems, Link 16 tactical data exchange network, AGM-84H/K Standoff Land Attack Missile, and F/A-18 Fire Detection and Extinguishing Systems.</li>
+					<li>Conducted operational planning and project management in support of the exercises NORTHER EDGE, MAX THUNDER, RED FLAG, and SCORPION FIRE as well as for Marine Aviation Weapons and Tactics Squadron’s premier courses Marine Division Tactics Course and Weapons and Tactics Instructor Course.</li>
+					<li>Planned and flew as part of four separate trans-oceanic strategic movements.</li>
+					<li>Logged over 540 mishap-free hours in the F/A-18 of which about 100 were in support of Operation Enduring Freedom.</li>
+					<li>Effectively and efficiently managed a system of combat systems under high stress situations throughout numerous detachments and two deployments.</li>
+				</ul>
+				<p>Click <span id="wrkCls">here</span> for less.</p>
+			</div><!--doodyWindow col-->
+			<hr class="sep">
+			<div class="container" id="ed-cont">
+				<div class="row abtsxn" id=education>
+					<div class="col-xs-12 text-right text-uppercase title" id="ed-title">EDUCATION
+					</div><!--ed-title col-->
+					<hr class="title-hr" id="ed-hr">
+					<div class="col-xs-12" id="ed-content">
+						<article class="col-xs-12 school">
+							<a href="https://www.lynda.com" target="_blank" title="Lynda.com"><img src="images/lynda.jpeg" class="schoolLogo"></a>
+							<article class="classInfo"><p class="text-center"><a href="https://www.lynda.com" target="_blank">Lynda.com</a></p><b><u>Date</u>:</b> July 2016<br><b><u>Certificates</u>:</b>
+								<ul>
+									<li><b>Learning Paths:</b><a href="https://www.lynda.com/learning-paths/Web/become-a-user-experience-designer" target="_blank"> Become a User Experience Designer</a>
+									</li>
+									<li><b>Courses:</b>
+										<ul>
+											<li><a href="https://www.lynda.com/Balsamiq-Mockups-tutorials/UX-Design-Tools-Balsamiq-Mockups/172857-2.html" target="_blank">UX Design Tools: Balsamiq Mockups</a></li>
+											<li><a href="https://www.lynda.com/CSS-tutorials/Design-Web-CSS-Controlled-SVG-PHP/424048-2.html" target="_blank">Design the Web: CSS-Controlled SVG with PHP</a>
+											</li>
+											<li><a href="https://www.lynda.com/CSS-tutorials/Design-Web-Graphics-CSS-Pseudo-Elements/162711-2.html" target="_blank">Design the Web: Graphics and CSS Pseudo-Elements</a>
+											</li>
+											<li><a href="https://www.lynda.com/CSS-tutorials/Design-Web-CSS-Animated-Rollovers/373561-2.html" target="_blank">Design the Web: CSS Animated Rollovers</a>
+											</li>
+										</li><!--courses-->
+									</ul><!--inside ul-->
+								</ul><!--outside ul-->
+							</article><!--lynda article-->
+						</article><!--school col-->
+						<hr class="schoolHr center-block">
+						<article class="col-xs-12 school">
+							<a href="https://www.freecodecamp.com/" target="_blank" title="freeCodeCamp.com"><img src="images/freecodecamp.png" class="schoolLogo"></a>
+							<article class="classInfo"><p class="text-center"><a href="https://www.freecodecamp.com" target="_blank">freeCodeCamp.com</a></p><b><u>Date</u>:</b> June 2016 to Present<br><u><b>Learning Paths:</b></u>
+								<ul>
+									<li><a href="https://www.freecodecamp.com" target="_blank">Front End Development</a>
+									</li>
+									<li><a href="https://www.freecodecamp.com" target="_blank">Full Stack Development</a>
+									</li>
+								</ul>
+							</article><!--FCC article-->
+						</article><!--school col-->
+						<hr class="schoolHr center-block">
+						<article class="col-xs-12 school">
+							<a href="https://www.udacity.com/" target="_blank" title="Udacity.com"><img src="images/udacity.jpg" class="schoolLogo"></a>
+							<article class="classInfo"><p class="text-center"><a href="https://www.udacity.com" target="_blank">Udacity.com</a></p><b><u>Date</u>:</b> May to June 2016<br><u><b>Certificate:</b></u>
+								<ul>
+									<li><a href="https://www.udacity.com/course/intro-to-html-and-css--ud304" target="_blank">Intro to HTML and CSS</a>
+									</li>
+								</ul>
+							</article><!--Udacity article-->
+						</article><!--school col-->
+						<hr class="schoolHr center-block">
+						<article class="col-xs-12 school">
+							<a href="http://www.psu.edu/" target="_blank" title="Penn State University"><img src="images/300pxPSU.png" class="schoolLogo"></a>
+							<article class="classInfo"><p class="text-center"><a href="http://www.psu.edu" target="_blank">Penn State University</a></p><b><u>Date</u>:</b> September 2003 to August 2007<br><u><b>Degree:</b></u>
+								<ul>
+									<li><a href="http://admissions.psu.edu/academics/majors/4year/?displayBy=alpha" target="_blank">BS Biology: Neuroscience</a>
+									</li>
+								</ul>
+							</article><!--psu article-->
+						</article><!--school col--> 
+					</div><!--ed-content col-->
+				</div><!--education section row-->
+			</div><!--education container-->
+		</div><!--main content container-fluid-->
+		<div class="container-fluid">
+			<div id="contactWindow">
+				<div class="row">
+					<div class="col-sm-12 hidden-xs text-center" id="contact-buttons">
+        		<div class="buttons">
+        		<a href="mailto:drkohlipk@gmail.com?" target="_top" title="E-mail Me!" id="e-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://www.facebook.com/usmcltdan" rel="nofollow" title="Follow Me On Facebook!" target="_blank" id="facebook"><i class="fa fa-facebook-f fa-3x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://www.linkedin.com/in/daniel-kohli-299155118" target="_blank" title="Let's Connect On LinkedIn!" id="linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://github.com/drkohlipk" target="_blank" title="Check Out My Github!" id="github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></div>
+						<div class="buttons">
+        		<a href="http://codepen.io/drkohli/" target="_blank" title="Check Out My Codepen!" id="codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a></div>
+        	</div><!--small col contact buttons-->
+					<div class="col-xs-12 visible-xs text-center" id="contact-buttons">
+        		<div class="buttons">
+        		<a href="mailto:drkohlipk@gmail.com?" target="_top" title="E-mail Me!" id="e-mail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://www.facebook.com/usmcltdan" rel="nofollow" title="Follow Me On Facebook!" target="_blank" id="facebook"><i class="fa fa-facebook-f fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://www.linkedin.com/in/daniel-kohli-299155118" target="_blank" title="Let's Connect On LinkedIn!" id="linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+        		<div class="buttons">
+        		<a href="https://github.com/drkohlipk" target="_blank" title="Check Out My Github!" id="github"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+						<div class="buttons">
+        		<a href="http://codepen.io/drkohli/" target="_blank" title="Check Out My Codepen!" id="codepen"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></div>
+        	</div><!--xs col contact buttons-->
+				</div><!--contact button window row-->
+			</div><!--contactWindow parent div-->
+		</div><!--contactWindow container-fluid-->
+    <footer class="panel-footer" id="footer">
+    	<div class="container">
+        <section class="row" id="contact-row">
+					<div class="col-xs-12 visible-sm visible-xs text-center contactInfo">
+						<ul>
+							<a href="tel:1-619-913-6197"><li>619.913.6197</li></a>
+							<a href="mailto:drkohlipk@gmail.com?" target="_top"><li>drkohlipk@gmail.com</li></a>
+							<li>2465 Neoma St., San Diego, CA 92109</li>
+						</ul>
+					</div><!--xs contactInfo-->
+					<hr class="text-center visible-sm visible-xs" id="contactHr">
+					<div class="col-md-4 col-xs-6" id="inputs">
+						<form action="https://formspree.io/drkohlipk@gmail.com" method="POST">
 							<input type="text" name="FullName"  value="Name" class="bottomInput" id="nameEnter"/><br>
 							<input type="text" name="EmailAddr" value="E-mail" class="bottomInput" id="emailEnter"/><br>
 							<textarea rows="8" cols="80" name="message" class="bottomInput" id="messageEnter">Type your message here</textarea><br>
