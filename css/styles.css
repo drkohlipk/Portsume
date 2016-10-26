@@ -21,7 +21,7 @@ body {
 .row {
 	width: 100%;
 }
-	
+
 .container-fluid {
 	margin: 0;
 	padding: 0;
@@ -43,7 +43,7 @@ body {
 	transition: all 0.6s ease-out;
 }
 
-#logo { 
+#logo {
   width: 137px;
   height: 55px;
   background: url('../images/PJLogo2Nav.png') no-repeat;
@@ -169,7 +169,7 @@ body {
 
 #leftQuote {
 	position: absolute;
-	top: -43px;	
+	top: -43px;
 	left: 0px;
 	font-size: 150px;
 	font-family: cursive;
@@ -204,9 +204,9 @@ body {
 	float: right;
 	width: 300px;
 	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
-  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
-  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
-  background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));  
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
 	margin: 0 15px 10px 0;
 }
 
@@ -261,9 +261,9 @@ body {
 #work-hr {
 	float: left;
 	width: 450px;
-	background: -webkit-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
-  background: -moz-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
-  background: -ms-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0)); 
+	background: -webkit-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0));
+  background: -moz-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0));
+  background: -ms-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0));
   background: -o-linear-gradient(left, rgba(0,0,0,.75), rgba(0,0,0,0));
 	margin: 0 0 0 15px;
 }
@@ -343,9 +343,9 @@ span.historyBtn span {
 	float: right;
 	width: 300px;
 	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
-  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
-  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1)); 
-  background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));  
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
 	margin: 0 15px 0 0;
 }
 
@@ -362,9 +362,9 @@ span.historyBtn span {
 .schoolHr {
 	width: 100%;
 	height: 1px;
-	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
-  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
-  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0)); 
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
+  background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
   background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
 	padding: 0;
 	border: none;
@@ -620,13 +620,13 @@ span.historyBtn span {
 		background-size: 560px 350px;
 	}
 	/*End At A Glance Section*/
-	
+
 	/*Start Portfolio Section*/
 	#port-blurb {
 		padding: 10px 0 0 30px;
 	}
 	/*End Portfolio Section*/
-	
+
 	/*Start Work History Section*/
 	span.historyBtn {
 		margin: 0px 50px;
@@ -642,7 +642,7 @@ span.historyBtn span {
 }
 
 /************************Bigger Tablet************************/
-@media only screen and (min-width: 768px) and (max-width: 991px) {	
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   /*Start Header*/
 	body {
 		background: url("../images/mdBackground.jpg") no-repeat center;
@@ -650,47 +650,47 @@ span.historyBtn span {
 		background-size: cover;
 		padding-top: 60px;
 	}
-	
+
 	#name { /*Navbar Name*/
 		margin: 22px 0 20px 120px;
 		font-size: 30px;
 	}
-	
+
 	.navbar-header {
 		float: none;
 	}
-	
+
 	.navbar-left,.navbar-right {
 		float: none !important;
 	}
-	
+
 	.navbar-toggle {
 		display: block;
 	}
-	
+
 	.navbar-collapse {
 		border-top: 1px solid transparent;
 		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 	}
-	
+
 	.navbar-fixed-top {
 		top: 0;
 		border-width: 0 0 1px;
 	}
-	
+
 	.navbar-collapse.collapse {
 		display: none!important;
 	}
-	
+
 	.navbar-nav {
 		float: none!important;
 		margin-top: 7.5px;
 	}
-	
+
 	.navbar-nav>li {
 		float: none;
 	}
-	
+
 	.navbar-nav>li>a {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -698,19 +698,19 @@ span.historyBtn span {
 		height: 50px;
 		width: 100%;
 	}
-	
+
 	.collapse.in{
 		display:block !important;
 	}
-	
+
 	#menu-toggle {
 		margin: 12px 10px 0 0;
 	}
-	
+
 	.icon-bar {
 		border: 1px solid white;
 	}
-	
+
 	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
 		height: 50px;
 		width: 100%;
@@ -722,14 +722,14 @@ span.historyBtn span {
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Link Hover*/
 		border-bottom: 3px solid white;
 	}
-	
+
 	.divider {
 		height: .5px;
 		border: .5px solid white;
 	}
 	/*End Header*/
 
-	
+
 	/*Start Pic and Blurb*/
 	#top-content {
 		min-height: 430px;
@@ -757,7 +757,7 @@ span.historyBtn span {
 	}
 	/*End Profile Pic and Blurb*/
 
-	
+
 	/*Start About Section*/
 	.title {
 		font-size: 30px;
@@ -774,7 +774,7 @@ span.historyBtn span {
 
 	#leftQuote {
 		position: absolute;
-		top: -23px;	
+		top: -23px;
 		left: 5px;
 		font-size: 100px;
 	}
@@ -803,7 +803,7 @@ span.historyBtn span {
 	#workHistory {
 		height: 350px;
 	}
-	
+
 	#wrkhis-title {
 		margin-top: 15px;
 	}
@@ -819,7 +819,7 @@ span.historyBtn span {
 	#wrkhis-content #p1 {
 		font-size: 16px;
 	}
-	
+
 	#readMore {
 		margin-top: 5px;
 		font-size: 12px;
@@ -831,7 +831,7 @@ span.historyBtn span {
 		width: 200px;
 		height: 200px;
 	}
-	
+
 	span.historyBtn {
 		margin: 0px 30px;
 	}
@@ -867,13 +867,13 @@ span.historyBtn span {
 	/*End Education Section*/
 	/*End About Section*/
 
-	
+
 	/*Start Footer*/
 	#inputs {
 		padding: 10px 0 0 10px;
 		font-size: 12px;
 	}
-	
+
 	#messageEnter {
 		height: 100px
 	}
@@ -890,7 +890,7 @@ span.historyBtn span {
 
 	#contact li {
 		font-size: .9em;
-		
+
 	}
 
 	.contactInfo li {
@@ -898,11 +898,11 @@ span.historyBtn span {
 		margin: 0 30px 15px;
 		font-size: 14px;
 	}
-	
+
 	#contactHr {
 		width: 90%;
 		height: 1px;
-		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0)); 
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
@@ -931,15 +931,15 @@ span.historyBtn span {
 		margin: 20px 0 20px 35%;
 		font-size: 30px;
 	}
-	
+
 	#menu-toggle {
 		margin: 10px 15px 0 0;
 	}
-	
+
 	.icon-bar {
 		border: 1px solid white;
 	}
-	
+
 	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
 		height: 50px;
 		width: 100%;
@@ -947,19 +947,19 @@ span.historyBtn span {
 		background-color: rgba(54, 77, 127, .8);
 		padding-top: 15px;
 	}
-	
+
 	.divider {
 		height: .5px;
 		border: .5px solid white;
 	}
-	
+
 	.navbar {
 		margin-bottom: 0 !important;
 	}
 
 	/*End Header*/
 
-	
+
 	/*Start Pic and Blurb*/
 	#top-content {
 		min-height: 410px;
@@ -987,7 +987,7 @@ span.historyBtn span {
 	}
 	/*End Profile Pic and Blurb*/
 
-	
+
 	/*Start About Section*/
 	.title {
 		font-size: 30px;
@@ -1003,7 +1003,7 @@ span.historyBtn span {
 	}
 
 	#leftQuote {
-		top: -23px;	
+		top: -23px;
 		left: 20px;
 		font-size: 100px;
 	}
@@ -1037,7 +1037,7 @@ span.historyBtn span {
 	#workHistory {
 		height: 350px;
 	}
-	
+
 	#wrkhis-title {
 		margin-top: 15px;
 	}
@@ -1054,7 +1054,7 @@ span.historyBtn span {
 		margin-top: -5px;
 		font-size: 2.0vw;
 	}
-	
+
 	#readMore {
 		margin-top: 5px;
 		font-size: 1.7vw;
@@ -1066,7 +1066,7 @@ span.historyBtn span {
 		width: 150px;
 		height: 150px;
 	}
-	
+
 	span.historyBtn {
 		margin: 0px 20px;
 	}
@@ -1103,8 +1103,8 @@ span.historyBtn span {
 	}
 	/*End Education Section*/
 	/*End About Section*/
-	
-	
+
+
 	/*Start Contact Window Section*/
 	#contactWindow {
 		min-height: 150px;
@@ -1151,13 +1151,13 @@ span.historyBtn span {
 	}
 	/*End Contact Window Section*/
 
-	
+
 	/*Start Footer*/
 	#inputs {
 		padding: 10px 0 0 10px;
 		font-size: 1.7vw;
 	}
-	
+
 	#messageEnter {
 		height: 100px
 	}
@@ -1174,7 +1174,7 @@ span.historyBtn span {
 
 	#contact li {
 		font-size: .9em;
-		
+
 	}
 
 	.contactInfo li {
@@ -1182,16 +1182,16 @@ span.historyBtn span {
 		margin: 0 8px 15px;
 		font-size: 1.9vw;
 	}
-	
+
 	#contactHr {
 		width: 90%;
 		height: 1px;
-		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0)); 
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 	}
-	
+
 	#copyright {
 		font-size: 1.8vw;
 	}
@@ -1209,7 +1209,7 @@ span.historyBtn span {
 		height: auto;
 		padding-top: 60px;
 	}
-	
+
   /*Start Header*/
 	#topbar {
 		height: 55px;
@@ -1219,15 +1219,15 @@ span.historyBtn span {
 		margin: 20px 0 20px 24%;
 		font-size: 7.0vw;
 	}
-	
+
 	#menu-toggle {
 		margin: 10px 15px 0 0;
 	}
-	
+
 	.icon-bar {
 		border: 1px solid white;
 	}
-	
+
 	.navbar-default .navbar-nav > li > a { /*Navbar Links*/
 		height: 50px;
 		width: 100%;
@@ -1235,18 +1235,18 @@ span.historyBtn span {
 		background-color: rgba(54, 77, 127, .8);
 		padding-top: 15px;
 	}
-	
+
 	.divider {
 		height: .5px;
 		border: .5px solid white;
 	}
-	
-	.navbar-default { 
-		margin: 0 !important; 
+
+	.navbar-default {
+		margin: 0 !important;
 	}
 	/*End Header*/
 
-	
+
 	/*Start Pic and Blurb*/
 	#top-content {
 		min-height: 320px;
@@ -1274,7 +1274,7 @@ span.historyBtn span {
 	}
 	/*End Profile Pic and Blurb*/
 
-	
+
 	/*Start About Section*/
 	.title {
 		font-size: 20px;
@@ -1308,17 +1308,17 @@ span.historyBtn span {
 		min-height: 350px;
 		padding-right: 0px;
 	}
-	
+
 	#port-title {
 		margin-top: 10px;
 		padding-right: 0;
 	}
-	
+
 	#port-hr {
 		width: 150px;
 		margin: 0 0 15px;
 	}
-	
+
 	#port-coverflow {
 		width: 100%;
 		margin: 0 15px 0;
@@ -1329,11 +1329,11 @@ span.historyBtn span {
 		padding: 0 0 10px 15px;
 		font-size: 12px;
 	}
-	
+
 	#portPreview {
 		font-size: 17px;
 	}
-	
+
 	#portWords {
 		font-size: 2.5vw;
 	}
@@ -1344,7 +1344,7 @@ span.historyBtn span {
 	#workHistory {
 		height: 260px;
 	}
-	
+
 	#wrkhis-title {
 		margin-top: 10px;
 	}
@@ -1363,7 +1363,7 @@ span.historyBtn span {
 		font-size: 2.5vw;
 		line-height: 1.2;
 	}
-	
+
 	#readMore {
 		margin-top: 5px;
 		font-size: 2.4vw;
@@ -1375,7 +1375,7 @@ span.historyBtn span {
 		width: 90px;
 		height: 90px;
 	}
-	
+
 	span.historyBtn {
 		margin: 0 1% 0;
 	}
@@ -1383,30 +1383,30 @@ span.historyBtn span {
 	span.historyBtn span {
 		font-size: 2.5vw;
 	}
-	
+
 	#wrkHrnt {
 		width: 15px;
 		height: 15px;
-		margin-bottom: 2px; 
+		margin-bottom: 2px;
 	}
 	/*End Work History Section*/
 
 
 	/*Start Education Section*/
 	#ed-cont {
-		padding: 0 20px 0 0;	
+		padding: 0 20px 0 0;
 	}
-	
+
 	#education {
 		margin: -5px 0 0 0;
 		min-height: 400px;
 	}
-	
+
 	#ed-title {
 		margin-right: 0;
 		padding: 0;
 	}
-	
+
 	#ed-hr {
 		width: 160px;
 		margin-right: 0;
@@ -1434,11 +1434,11 @@ span.historyBtn span {
 		font-size: 9px;
 		width: 80%;
 	}
-	
+
 	.schoolHr {
 		margin: 10px;
 	}
-	
+
 	.schoolHr:after {
 		content: url(../images/hornetSmall.png);
 		top: -7px;
@@ -1446,8 +1446,8 @@ span.historyBtn span {
 	}
 	/*End Education Section*/
 	/*End About Section*/
-	
-	
+
+
 	/*Start Contact Window Section*/
 	#contactWindow {
 		min-height: 120px;
@@ -1494,29 +1494,29 @@ span.historyBtn span {
 	}
 	/*End Contact Window Section*/
 
-	
+
 	/*Start Footer*/
 	#footer .container {
 		padding: 0;
 	}
-	
+
 	#contact-row {
 		margin: 0;
 	}
-	
+
 	#inputs {
 		padding: 0;
 		font-size: 9px;
 	}
-	
+
 	.bottomInput {
 		width: 150px;
 	}
-	
+
 	#messageEnter {
 		height: 70px;
 	}
-	
+
 	#submitButton {
 		margin: 0 0 10px 0;
 	}
@@ -1541,7 +1541,7 @@ span.historyBtn span {
 		margin: 0;
 		padding-right: 40px;
 	}
-	
+
 	.contactInfo li {
 		display: inline-block;
 		list-style-type: none;
@@ -1549,16 +1549,16 @@ span.historyBtn span {
 		font-size: 11px;
 		padding: 0;
 	}
-	
+
 	#contactHr {
 		width: 90%;
 		height: 1px;
-		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0)); 
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0));
 	}
-	
+
 	#copyright {
 		font-size: 1.8vw;
 	}
