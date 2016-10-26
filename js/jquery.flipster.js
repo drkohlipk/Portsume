@@ -114,8 +114,11 @@
             // If not false, Flipster will build an unordered list of the items
             // Values true or 'before' will insert the navigation before the items, 'after' will append the navigation after the items
 
+<<<<<<< HEAD
 						blurby: true,
 					
+=======
+>>>>>>> b524f4e0ab9315ab142bb34cc66e8506ac04d65c
             buttons: true,
             // [true|false|'custom']
             // If true, Flipster will insert Previous / Next buttons with SVG arrows
