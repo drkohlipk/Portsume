@@ -1,0 +1,17 @@
+{
+  "name": "portsume",
+  "version": "1.0.0",
+  "description": "Combination of my portfolio and resume in one convenient location with a fun-to-say name!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PJ",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.1",
+    "path": "^0.12.7"
+  }
+}
