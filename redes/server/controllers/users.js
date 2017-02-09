@@ -3,26 +3,17 @@ var mongoose = require('mongoose'),
 
 var User = mongoose.model('User'); //stores the user model in the constant variable User
 
-module.exports = (() => { //exports an immediately invoked function to whoever imports this file
+module.exports = (function() { //exports an immediately invoked function to whoever imports this file
 	return { //return this object upon invocation...
-		index: (req, res) => { //gets all users
-			User.find({}, (err, data) => { //find all users in the DB
-				if (err) { //if there is an error...
-					res.json(err); //send the error message back to the user as JSON
-				} else { //otherwise...
-					res.json(data); //send all of the users back as JSON
-				}
-			});
-		}, //end index()
-		create: (req, res) => { //creates a user based on entered registration information
-			let pwordReg =
+		create: function(req, res) { //creates a user based on entered registration information
+			var pwordReg =
 				/(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+}{:;'?/><.;,])(?!.*\s).*$/; //regex for password validation
 			if (req.body.password.match(pwordReg)) { //if the password meets the min requirements...
 				req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(
 					8)); //hash the password
 				User.findOne({ //attempt to find a user in the DB based on the entered email address
 					email: req.body.email
-				}, (err, data) => {
+				}, function(err, data) {
 					if (err) { //if an error is returned...
 						console.log(err);
 					} else { //if there is no error...
@@ -31,8 +22,8 @@ module.exports = (() => { //exports an immediately invoked function to whoever i
 								'errorsFront': ['User already exists, please log in'] //return this error to the user in the form of JSON
 							});
 						} else { //if no user is returned (data is null)...
-							let user = new User(req.body); //create a new user based on the entered information...
-							user.save((err1, data1) => { //save the user to the DB (used err1 and data1 to differentiate from the outer function)
+							var user = new User(req.body); //create a new user based on the entered information...
+							user.save(function(err1, data1) { //save the user to the DB (used err1 and data1 to differentiate from the outer function)
 								if (err1) { //if there is an error...
 									res.json(err1); //sends this to user (runs validations in model!)
 								} else { //if there is no error...
@@ -48,21 +39,10 @@ module.exports = (() => { //exports an immediately invoked function to whoever i
 				});
 			}
 		},
-		show: (req, res) => { //retrieves a specific user based on id
-			User.findOne({ //use entered id to find user
-				_id: req.params.id
-			}, (err, data) => {
-				if (err) { //if an error is thrown while searching...
-					res.json(err); //send error to front
-				} else { //if there is no error...
-					res.json(data); //return user info to client-side
-				}
-			});
-		},
-		login: (req, res) => { //logs user in based on entered login information
+		login: function(req, res) { //logs user in based on entered login information
 			User.findOne({ //uses entered email to search for user in DB
 				email: req.body.email
-			}, (err, data) => {
+			}, function(err, data) {
 				if (err) { //if an error is thrown (model validations, etc)...
 					res.json(err); //return error to client-side
 				} else { //if there is no error...
