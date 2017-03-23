@@ -1,0 +1,43 @@
+{
+  "name": "PJs Portsume",
+  "homepage": "www.pjsportsume.com",
+  "authors": [
+    "PJ"
+  ],
+  "description": "Combination of my portfolio and resume in one convenient location with a fun-to-say name!",
+  "main": "app.js",
+  "keywords": [
+    "Portsume",
+    "PJ",
+    "Resume",
+    "Portfolio",
+    "MEAN",
+    "MongoDB",
+    "Angular",
+    "Express",
+    "Node",
+    "C#",
+    "ASP.NET",
+    "Core",
+    "Entity",
+    "Core",
+    "Dapper",
+    "Python",
+    "Java",
+    "Django",
+    "Flask"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3",
+    "angular-cookies": "^1.6.3"
+  }
+}
