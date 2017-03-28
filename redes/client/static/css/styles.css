@@ -649,7 +649,18 @@ span.historyBtn span {
 .contactInfo a {
     color: #fff;
     text-decoration: underline;
-    text-decoration-color: #fff
+    text-decoration-color: #fff;
+}
+
+#logreg {
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 500;
+}
+
+.center {
+	margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {

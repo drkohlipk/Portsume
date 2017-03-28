@@ -11,6 +11,10 @@ app.config(['$routeProvider', '$cookiesProvider', function($routeProvider,
 			templateUrl: '/static/partials/login.html',
 			controller: 'messageController'
 		})
+		.when('/dash', {
+			templateUrl: 'static/partials/dash.html',
+			controller: 'messageController'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});

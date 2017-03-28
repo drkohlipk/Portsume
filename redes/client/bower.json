@@ -38,6 +38,7 @@
   "dependencies": {
     "angular": "^1.6.3",
     "angular-route": "^1.6.3",
-    "angular-cookies": "^1.6.3"
+    "angular-cookies": "^1.6.3",
+    "angular-cardflow": "^0.3.2"
   }
 }
